@@ -1,640 +1,571 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>Aurora - Portfolio Bootstrap5 HTML/CSS Website Template</title>
+  <title>Mohsen Shirali</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="Mohsen Shirali">
+  <meta name="keywords" content="Mohsen Shirali, IoT, Process Mining, Security, Privacy">
+  <meta name="description" content="Mohsen Shirali — Postdoctoral Researcher at UCLouvain. IoT, process mining, data analytics, security and privacy.">
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="format-detection" content="telephone=no">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="author" content="TemplatesJungle">
-	<meta name="keywords" content="Portfolio, Bootstrap5, HTML/CSS, Website Template">
-	<meta name="description" content="Aurora is a Portfolio Bootstrap5 HTML/CSS Website Template">
+  <link rel="stylesheet" type="text/css" href="assets/icomoon/icomoon.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/chocolat/css/chocolat.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-	<link rel="stylesheet" type="text/css" href="assets/icomoon/icomoon.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/chocolat/css/chocolat.css">
-	<link rel="stylesheet" type="text/css" href="css/vendor.css">
-
-	<link rel="stylesheet" type="text/css" href="style.css">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap"
-		rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
 </head>
-
 <body>
+<div id="overlayer">
+  <span class="loader"><span class="loader-inner"></span></span>
+</div>
 
-	<div id="overlayer">
-		<span class="loader">
-			<span class="loader-inner"></span>
-		</span>
-	</div>
+<header id="header">
+  <div class="header-wrap" data-aos="fade">
+    <div class="main-logo">
+      <a href="index.html" title="Mohsen Shirali"></a>
+    </div>
+    <nav id="navbar" class="d-none d-md-block">
+      <ul class="list-unstyled d-flex gap-4 m-0 align-items-center">
+        <li><a class="text-decoration-none" href="index.html#home">Home</a></li>
+        <li><a class="text-decoration-none" href="about.html">About Me</a></li>
+        <li><a class="text-decoration-none" href="index.html#experience">Work Experience</a></li>
+        <li><a class="text-decoration-none" href="index.html#education">Education</a></li>
+        <li><a class="text-decoration-none" href="publications.html">Publications</a></li>
+        <li><a class="text-decoration-none" href="projects.html">Projects</a></li>
+        <li><a class="text-decoration-none" href="index.html#awards">Awards</a></li>
+        <li><a class="text-decoration-none" href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav id="navbar" class="d-md-none">
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-btn" for="menu-toggle"><span></span></label>
+    </nav>
+  </div>
+</header>
 
-	<div class="nav nav-overlay">
-		<div class="nav__content">
-			<ul class="nav__list">
-				<li class="nav__list-item mb-2 active-nav"><a href="#">Home</a></li>
-				<li class="nav__list-item mb-2"><a href="styles.html">Styles <span
-							class="badge bg-dark fs-6">PRO</span></a>
-				</li>
-				<li class="nav__list-item mb-2"><a href="blog.html">Blog <span class="badge bg-dark fs-6">PRO</span></a>
-				</li>
-				<li class="nav__list-item mb-2"><a href="portfolio-masonry.html">Portfolio Masonry <span
-							class="badge bg-dark fs-6">PRO</span></a></li>
-				<li class="nav__list-item mb-2"><a href="single-post.html">Single Post <span
-							class="badge bg-dark fs-6">PRO</span></a></li>
-				<li class="nav__list-item mb-2"><a href="single-portfolio.html">Single Portfolio <span
-							class="badge bg-dark fs-6">PRO</span></a></li>
-				<li class="nav__list-item mb-2"><a href="contact.html">Contact us <span
-							class="badge bg-dark fs-6">PRO</span></a></li>
-				<li class="nav__list-item mb-2"><a href="team.html">Our Team <span
-							class="badge bg-dark fs-6">PRO</span></a>
-				</li>
-				<li class="nav__list-item mb-2"><a href="https://templatesjungle.gumroad.com/l/aurora"
-						class="text-decoration-underline fw-bold" target="_blank">Get PRO Version</a></li>
-			</ul>
-		</div>
-	</div>
+<div class="nav nav-overlay d-md-none">
+  <div class="nav__content">
+    <ul class="nav__list">
+      <li class="nav__list-item mb-2"><a href="index.html#home">Home</a></li>
+      <li class="nav__list-item mb-2"><a href="about.html">About Me</a></li>
+      <li class="nav__list-item mb-2"><a href="index.html#experience">Work Experience</a></li>
+      <li class="nav__list-item mb-2"><a href="index.html#education">Education</a></li>
+      <li class="nav__list-item mb-2"><a href="publications.html">Publications</a></li>
+      <li class="nav__list-item mb-2"><a href="projects.html">Projects</a></li>
+      <li class="nav__list-item mb-2"><a href="index.html#awards">Awards</a></li>
+      <li class="nav__list-item mb-2"><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
 
-	<header id="header">
-		<div class="header-wrap" data-aos="fade">
-			<div class="main-logo">
-				<a href="index.html"><img src="images/logo.png" title="Portfo HTML Template"></a>
-			</div><!--main-logo-->
+<section id="home" class="jarallax bg-secondary" style="padding-top: 120px;">
+  <div class="container-lg">
+    <div class="row align-items-end">
+      <div class="col-lg-7" data-aos="zoom-in-up">
+        <div class="banner-content">
+          <div class="banner-header">
+            <h1 class="display-3">Mohsen Shirali</h1>
+            <h2 class="display-6 mb-3">PhD in Computer Engineering</h2>
+            <p class="fs-5 mb-4">
+              Postdoctoral Researcher at ICTEAM / INGI, Université catholique de Louvain (UCLouvain), Belgium.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="about.html" class="btn btn-primary btn-large">About me</a>
+              <!-- <a href="#contact" class="btn btn-outline-dark btn-large">Get in touch</a> -->
+              <!-- <a href="Mohsen_Shirali_CV.pdf" class="btn btn-outline-dark btn-large" target="_blank" rel="noopener">Download CV</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5" data-aos="zoom-in-up">
+        <img src="images/banner_pic-removebg.png" alt="Mohsen Shirali" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
 
-			<nav id="navbar">
-				<input id="menu-toggle" type="checkbox" />
-				<label class="menu-btn" for="menu-toggle">
-					<span></span>
-				</label>
-			</nav>
+<section id="about" class="padding-large">
+  <div class="container-lg" data-aos="zoom-in-up">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="section-header align-center mb-4">
+          <!-- <span class="text-primary">About</span> -->
+          <h2 class="display-5 m-0">Short bio</h2>
+        </div>
+        <p class="fs-5">I received my Ph.D. (2025) and M.Sc. (2013) in Computer Engineering from Shahid Beheshti University (SBU), Tehran, Iran. My research focuses on the Internet of Things (IoT) in healthcare, emphasizing system architecture, privacy, data analytics, and process mining. I am currently a Postdoctoral Researcher at UCLouvain, working on anomaly detection in Cyber-Physical Systems. I previously held research positions at KU Leuven (2023–2024) and the University of Passau (2019–2020), and I have lectured at SBU and Ahvaz Sama University. In addition to academia, I have several years of R&D experience in industry. I have received scholarships from DAAD and Iran’s MSRT and have published in journals and conferences. My interests include IoT, data science, security and privacy, anonymous communication, and process mining.</p>
+        <div class="d-flex flex-wrap gap-2 mt-3 justify-content-center">
+          <a class="btn btn-dark" href="about.html">Read full biography</a>
+          <a class="btn btn-outline-dark" href="publications.html">Publications</a>
+          <a class="btn btn-outline-dark" href="projects.html">Projects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-		</div><!--header-wrap-->
-	</header>
+<section id="experience" class="padding-large pt-0">
+  <div class="container-lg">
+    <div class="row">
+      <div class="section-header align-center mb-5">
+        <!-- <span class="text-primary">Work Experience</span> -->
+        <h2 class="display-5 m-0">Work Experience</h2>
+      </div>
+    </div>
+    <div class="row">
+      
+    <div class="col-md-6" data-aos="zoom-in-up">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between flex-wrap gap-2">
+            <h4 class="card-title m-0">Postdoctoral Researcher</h4>
+            <span class="text-primary">Jul 2024 – Present</span>
+          </div>
+          <div class="text-muted mb-2">ICTEAM, UCLouvain (Belgium)</div>
+          <ul class="mb-0">
+            <li>Research Project: Robustness in Complex Systems</li><li>Topics: ML-based anomaly detection, time-series analysis, system modelling, digital twins</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
 
-	<section id="billboard" class="jarallax bg-secondary">
-		<div class="container-lg">
-			<div class="row align-items-end">
-				<div class="col-lg-6" data-aos="zoom-in-up">
-					<div class="banner-content">
-						<div class="banner-header">
-							<h2 class="display-1">Aurora Lane<br />Creative Head</h2>
-							<p class="fs-5">I specialize in creating logos, visual identities, mobile apps, websites,
-								social media
-								content, and editorial designs.</p>
-							<a href="#" class="btn btn-primary btn-large">Get in touch</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6" data-aos="zoom-in-up">
-					<img src="images/banner-pic.png" alt="Banner" class="img-fluid">
-				</div>
-			</div>
-		</div>
-	</section>
+    <div class="col-md-6" data-aos="zoom-in-up">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between flex-wrap gap-2">
+            <h4 class="card-title m-0">Researcher</h4>
+            <span class="text-primary">Oct 2023 – Apr 2024</span>
+          </div>
+          <div class="text-muted mb-2">Faculty of Economics and Business (FEB), KU Leuven (Belgium)</div>
+          <ul class="mb-0">
+            <li>Using process mining in multimodal IoT systems</li><li>Supervisor: Prof. Estefanía Serral Asensio</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
 
-	<section id="about-me" class=" padding-large">
-		<div class="container-lg">
-			<div class="row">
-				<div class="col-md-4 mb-5 mb-lg-0">
-					<div class="info-box" data-aos="zoom-in-up" data-aos-delay="300">
-						<div class="icon"><iconify-icon icon="la:edit"></div>
-						<h3>UI/UX design</h3>
-						<p>Perferendis doloribus asperiores repellat quia voluptas aspernatur te natus accusan maiores
-							alias consequatur aut aut.</p>
-					</div>
-				</div>
-				<div class="col-md-4 mb-5 mb-lg-0">
-					<div class="info-box" data-aos="zoom-in-up" data-aos-delay="600">
-						<div class="icon"><iconify-icon icon="la:gitter"></div>
-						<h3>Branding</h3>
-						<p>Perferendis doloribus asperiores repellat quia voluptas aspernatur te natus accusan maiores
-							alias consequatur aut aut.</p>
-					</div>
-				</div>
-				<div class="col-md-4 mb-5 mb-lg-0">
-					<div class="info-box" data-aos="zoom-in-up" data-aos-delay="900">
-						<div class="icon"><iconify-icon icon="la:jira"></div>
-						<h3>Logo Design</h3>
-						<p>Perferendis doloribus asperiores repellat quia voluptas aspernatur te natus accusan maiores
-							alias consequatur aut aut.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <div class="col-md-6" data-aos="zoom-in-up">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between flex-wrap gap-2">
+            <h4 class="card-title m-0">Lead Researcher & Head of Network Architecture Group</h4>
+            <span class="text-primary">Nov 2022 – Apr 2023</span>
+          </div>
+          <div class="text-muted mb-2">5G Research Group, Shahid Beheshti University (Iran)</div>
+          <ul class="mb-0">
+            <li>Radio Access Network (RAN) deployment requirements for 5G</li><li>Architectures: central/distributed/edge/cloud; joint project with MCI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
 
-	<section id="achievement" class="padding-large pt-0">
-		<div class="container-lg">
-			<div class="row">
-				<div class="section-header align-center mb-5">
-					<span class="text-primary">Awards and Recognition</span>
-					<h2 class="display-5 m-0">Achievement</h2>
-				</div>
-			</div>
-		</div>
+    <div class="col-md-6" data-aos="zoom-in-up">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between flex-wrap gap-2">
+            <h4 class="card-title m-0">R&D Specialist</h4>
+            <span class="text-primary">Jul 2020 – Mar 2022</span>
+          </div>
+          <div class="text-muted mb-2">Arad Company (Iran)</div>
+          <ul class="mb-0">
+            <li>Agile software design & development</li><li>Software architecture (conceptual and physical design)</li><li>Led an IoT-related project to integrate sensorial data</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
 
-		<div class="container-lg">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="card mb-4" data-aos="zoom-in-up" data-aos-delay="0">
-						<div class="card-body">
-							<span class="card-subtitle mb-2 text-primary">2021</span>
-							<h4 class="card-title text-capitalize">best Website design</h4>
-							<p class="card-text">Breakthrough designer of the year 2022</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card mb-4" data-aos="zoom-in-up" data-aos-delay="200">
-						<div class="card-body">
-							<span class="card-subtitle mb-2 text-primary">2022</span>
-							<h4 class="card-title text-capitalize">Web animation award</h4>
-							<p class="card-text">Breakthrough designer of the year 2022</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card mb-4" data-aos="zoom-in-up" data-aos-delay="400">
-						<div class="card-body">
-							<span class="card-subtitle mb-2 text-primary">2021</span>
-							<h4 class="card-title text-capitalize">Top branding agency</h4>
-							<p class="card-text">Breakthrough designer of the year 2022</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card mb-4" data-aos="zoom-in-up" data-aos-delay="600">
-						<div class="card-body">
-							<span class="card-subtitle mb-2 text-primary">2021</span>
-							<h4 class="card-title text-capitalize">best Website design</h4>
-							<p class="card-text">Breakthrough designer of the year 2022</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card mb-4" data-aos="zoom-in-up" data-aos-delay="800">
-						<div class="card-body">
-							<span class="card-subtitle mb-2 text-primary">2022</span>
-							<h4 class="card-title text-capitalize">UI/UX design award</h4>
-							<p class="card-text">Breakthrough designer of the year 2022</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card mb-4" data-aos="zoom-in-up" data-aos-delay="1000">
-						<div class="card-body">
-							<span class="card-subtitle mb-2 text-primary">2022</span>
-							<h4 class="card-title text-capitalize">best motion design</h4>
-							<p class="card-text">Breakthrough designer of the year 2022</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <div class="col-md-6" data-aos="zoom-in-up">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between flex-wrap gap-2">
+            <h4 class="card-title m-0">Research Assistant & Visiting Researcher</h4>
+            <span class="text-primary">Apr 2019 – Mar 2020</span>
+          </div>
+          <div class="text-muted mb-2">Chair of IT-Security, University of Passau (Germany)</div>
+          <ul class="mb-0">
+            <li>Security and privacy of IoT and smart homes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
 
-	<section id="testimonials" class="padding-large bg-grey">
-		<div class="container-lg" data-aos="zoom-in-up" data-aos-delay="300">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-header align-center mb-5">
-						<span class="text-primary">What Clients Say</span>
-						<h2 class="display-5 m-0 dark">Testimonials</h2>
-					</div>
-				</div>
-			</div>
+    <div class="col-md-6" data-aos="zoom-in-up">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between flex-wrap gap-2">
+            <h4 class="card-title m-0">Lecturer</h4>
+            <span class="text-primary">2012 – 2022</span>
+          </div>
+          <div class="text-muted mb-2">Shahid Beheshti University (SBU) & Ahvaz Sama University (Iran)</div>
+          <ul class="mb-0">
+            <li>Teaching and project supervision (undergraduate & postgraduate)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+</section>
 
-			<div class="row">
-				<div class="col-md-12 position-relative">
-					<div class="testimonial-carousel swiper overflow-hidden">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="card testimonials-inner">
-									<div class="card-body">
-										<p class="card-text mb-2">Lorem ipsum dolor sit amet, elit consectetur
-											adipiscing. Odio tincidunt et, massa, turpis nec dolor posuere tempus. Nulla
-											congue et dolor sit amet, elit consectetur adipiscing.
-										</p>
-										<div class="testimonial-author">
-											<div class="author-detail">
-												<h3 class="name m-0">Lucas Wolfer</h3>
-												<span class="author-title text-primary">Ceo - Raisins</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="card testimonials-inner">
-									<div class="card-body">
-										<p class="card-text mb-2">Ipsum dolor sit amet, elit consectetur adipiscing.
-											Odio tincidunt et turpis nec dolor posuere tempus Nulla congue et dolor sit
-											amet, elit consectetur adipiscing.</p>
-										<div class="testimonial-author">
-											<div class="author-detail">
-												<h3 class="name m-0">Jennie</h3>
-												<div class="author-title text-primary">General Manager</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="card testimonials-inner">
-									<div class="card-body">
-										<p class="card-text mb-2">“Dolor sit amet, elit consectetur adipiscing. Odio
-											tincidunt et, massa, turpis nec dolor posuere tempus. Nulla congue et dolor
-											sit amet, elit consectetur adipiscing.”</p>
-										<div class="testimonial-author">
-											<div class="author-detail">
-												<h3 class="name m-0">Simple</h3>
-												<div class="author-title text-primary">Staff</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="card testimonials-inner">
-									<div class="card-body">
-										<p class="card-text mb-2">Lorem ipsum dolor sit amet, elit consectetur
-											adipiscing. Odio tincidunt et, massa, turpis nec dolor posuere tempus. Nulla
-											congue et dolor sit amet, elit consectetur adipiscing.
-										</p>
-										<div class="testimonial-author">
-											<div class="author-detail">
-												<h3 class="name m-0">Lucas Wolfer</h3>
-												<span class="author-title text-primary">Ceo - Raisins</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="card testimonials-inner">
-									<div class="card-body">
-										<p class="card-text mb-2">Ipsum dolor sit amet, elit consectetur adipiscing.
-											Odio tincidunt et turpis nec dolor posuere tempus Nulla congue et dolor sit
-											amet, elit consectetur adipiscing.</p>
-										<div class="testimonial-author">
-											<div class="author-detail">
-												<h3 class="name m-0">Jennie</h3>
-												<div class="author-title text-primary">General Manager</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="card testimonials-inner">
-									<div class="card-body">
-										<p class="card-text mb-2">“Dolor sit amet, elit consectetur adipiscing. Odio
-											tincidunt et, massa, turpis nec dolor posuere tempus. Nulla congue et dolor
-											sit amet, elit consectetur adipiscing.”</p>
-										<div class="testimonial-author">
-											<div class="author-detail">
-												<h3 class="name m-0">Simple</h3>
-												<div class="author-title text-primary">Staff</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-pagination"></div>
-				</div>
-			</div>
-		</div>
-	</section>
+<section id="education" class="padding-large pt-0 bg-grey">
+  <div class="container-lg">
+    <div class="row">
+      <div class="section-header align-center mb-5">
+        <!-- <span class="text-primary">Education</span> -->
+        <h2 class="display-5 m-0 dark">Education</h2>
+      </div>
+    </div>
+    <div class="row">
+      
+    <div class="col-md-6" data-aos="zoom-in-up">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between flex-wrap gap-2">
+            <h4 class="card-title m-0">Ph.D. in Computer Engineering — Computer Architecture</h4>
+            <span class="text-primary">Sep 2015 – Jul 2025</span>
+          </div>
+          <div class="text-muted mb-2">Shahid Beheshti University, Tehran, Iran</div>
+          <p class="mb-0">Thesis: An energy-efficient and privacy-preserving IoT-based solution for mental healthcare applications</p>
+        </div>
+      </div>
+    </div>
+    
 
-	<section id="portfolio" class="overflow-hidden padding-large">
-		<div class="container-lg" data-aos="zoom-in-up" data-aos-delay="300">
-			<div class="row">
-				<div class="col-md-8">
-					<div
-						class="section-header d-flex flex-wrap justify-content-center justify-content-md-start align-items-center mb-2 mb-md-5">
-						<h2 class="display-5 m-0">Recent Projects</h2>
-						<a href="#" class="btn-link ms-0 ms-md-5 text-dark text-decoration-none">View all Projects</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="swiper-buttons">
-						<div class="swiper-button portfolio-carousel-prev">←</div>
-						<div class="swiper-button portfolio-carousel-next">→</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
+    <div class="col-md-6" data-aos="zoom-in-up">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between flex-wrap gap-2">
+            <h4 class="card-title m-0">M.Sc. in Computer Engineering — Computer Architecture (Distinction)</h4>
+            <span class="text-primary">Sep 2011 – Nov 2013</span>
+          </div>
+          <div class="text-muted mb-2">Shahid Beheshti University, Tehran, Iran</div>
+          <p class="mb-0">Thesis: A Novel Group Key Management Scheme for Using Broadcast Encryption in WSNs</p>
+        </div>
+      </div>
+    </div>
+    
 
-					<div class="portfolio-carousel swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<figure class="portfolio-item">
-									<a href="single-portfolio.html"><img src="images/portfolio-large-6.jpg"
-											class="portfolio-image"></a>
-									<figcaption class="portfolio-title my-3">
-										<span class="text-primary text-uppercase fs-6">Design, Logo</span>
-										<h3 class="fs-4 fw-bold">Magazine front design</h3>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="swiper-slide">
-								<figure class="portfolio-item">
-									<a href="single-portfolio.html"><img src="images/portfolio-large-7.jpg"
-											class="portfolio-image"></a>
-									<figcaption class="portfolio-title my-3">
-										<span class="text-primary text-uppercase fs-6">Branding</span>
-										<h3 class="fs-4 fw-bold">Product Bottle Design</h3>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="swiper-slide">
-								<figure class="portfolio-item">
-									<a href="single-portfolio.html"><img src="images/portfolio-large-8.jpg"
-											class="portfolio-image"></a>
-									<figcaption class="portfolio-title my-3">
-										<span class="text-primary text-uppercase fs-6">Design</span>
-										<h3 class="fs-4 fw-bold">Magazine & brochure mockup</h3>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="swiper-slide">
-								<figure class="portfolio-item">
-									<a href="single-portfolio.html"><img src="images/portfolio-large-9.jpg"
-											class="portfolio-image"></a>
-									<figcaption class="portfolio-title my-3">
-										<span class="text-primary text-uppercase fs-6">Branding</span>
-										<h3 class="fs-4 fw-bold">Coffee bottle mockup</h3>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="swiper-slide">
-								<figure class="portfolio-item">
-									<a href="single-portfolio.html"><img src="images/portfolio-large-10.jpg"
-											class="portfolio-image"></a>
-									<figcaption class="portfolio-title my-3">
-										<span class="text-primary text-uppercase fs-6">Branding</span>
-										<h3 class="fs-4 fw-bold">Product tag mockup</h3>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="swiper-slide">
-								<figure class="portfolio-item">
-									<a href="single-portfolio.html"><img src="images/portfolio-large-11.jpg"
-											class="portfolio-image"></a>
-									<figcaption class="portfolio-title my-3">
-										<span class="text-primary text-uppercase fs-6">Branding</span>
-										<h3 class="fs-4 fw-bold">Perfume brand identity</h3>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="swiper-slide">
-								<figure class="portfolio-item">
-									<a href="single-portfolio.html"><img src="images/portfolio-large-12.jpg"
-											class="portfolio-image"></a>
-									<figcaption class="portfolio-title my-3">
-										<span class="text-primary text-uppercase fs-6">Branding</span>
-										<h3 class="fs-4 fw-bold">Coffee bottle mockup</h3>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="swiper-slide">
-								<figure class="portfolio-item">
-									<a href="single-portfolio.html"><img src="images/portfolio-large-13.jpg"
-											class="portfolio-image"></a>
-									<figcaption class="portfolio-title my-3">
-										<span class="text-primary text-uppercase fs-6">Branding</span>
-										<h3 class="fs-4 fw-bold">Product tag mockup</h3>
-									</figcaption>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <div class="col-md-6" data-aos="zoom-in-up">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between flex-wrap gap-2">
+            <h4 class="card-title m-0">B.Sc. in Computer Engineering (Distinction)</h4>
+            <span class="text-primary">Sep 2006 – Sep 2010</span>
+          </div>
+          <div class="text-muted mb-2">Islamic Azad University, Tehran-North Branch, Tehran, Iran</div>
+          <p class="mb-0">Thesis: Introducing Industrial Network Standards, Protocols and Applications</p>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+</section>
 
-	<section id="clients" class="bg-grey padding-large">
-		<div class="container-lg" data-aos="zoom-in-up" data-aos-delay="300">
-			<div class="row">
-				<div class="section-header align-center mb-5">
-					<h2 class="display-5 m-0">Our clients</h2>
-					<span class="text-black-50">We have worked with great clients for which we are very proud.</span>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 overflow-hidden">
-					<div id="clients-carousel" class="swiper clients-carousel">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide text-center"><img src="images/logo1.png" alt="brand logo"
-									class="img-fluid">
-							</div>
-							<div class="swiper-slide text-center"><img src="images/logo2.png" alt="brand logo"
-									class="img-fluid">
-							</div>
-							<div class="swiper-slide text-center"><img src="images/logo3.png" alt="brand logo"
-									class="img-fluid">
-							</div>
-							<div class="swiper-slide text-center"><img src="images/logo4.png" alt="brand logo"
-									class="img-fluid">
-							</div>
-							<div class="swiper-slide text-center"><img src="images/logo6.png" alt="brand logo"
-									class="img-fluid">
-							</div>
-							<div class="swiper-slide text-center"><img src="images/logo2.png" alt="brand logo"
-									class="img-fluid">
-							</div>
-							<div class="swiper-slide text-center"><img src="images/logo4.png" alt="brand logo"
-									class="img-fluid">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+<section id="publications" class="padding-large pt-0">
+  <div class="container-lg" data-aos="zoom-in-up">
+    <div class="row">
+      <div class="section-header align-center mb-4">
+        <!-- <span class="text-primary">Publications</span> -->
+        <h2 class="display-5 m-0">Selected Publications</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <ul class="fs-5">
+		  <li class='mb-2'><strong>Synergy of Information in Multimodal Internet of Things Systems—Discovering the Impact of Daily Behaviour Routines on Physical Activity Level</strong> — <span class='text-muted'>MDPI Sensors</span> (2025) — DOI: <a href='https://doi.org/10.3390/s25185619' target='_blank' rel='noopener'>10.3390/s25185619</a></li>
+          <li class='mb-2'><strong>An Interactive Error-correcting Approach for IoT-sourced Event Logs</strong> — <span class='text-muted'>ACM Trans. Internet Things</span> (2024) — DOI: <a href='https://doi.org/10.1145/3680289' target='_blank' rel='noopener'>10.1145/3680289</a></li>
+<li class='mb-2'><strong>A Survey on Anonymous Communication Systems with a Focus on Dining Cryptographers Networks</strong> — <span class='text-muted'>IEEE Access</span> (2023) — DOI: <a href='https://doi.org/10.1109/ACCESS.2023.3242870' target='_blank' rel='noopener'>10.1109/ACCESS.2023.3242870</a></li>
+<li class='mb-2'><strong>LLM-based event abstraction and integration for IoT-sourced logs</strong> — <span class='text-muted'>BP-Meet-IoT @ BPM</span> (2024)</li>
+<li class='mb-2'><strong>Identifying Variation in Personal Daily Routine Through Process Mining: A Case Study</strong> — <span class='text-muted'>PODS4H @ ICPM</span> (2023)</li>
+        </ul>
+        <div class="d-flex flex-wrap gap-2 justify-content-center mt-3">
+          <a class="btn btn-dark" href="publications.html">Full publications list</a>
+          <a class="btn btn-outline-dark" href="https://scholar.google.com/citations?user=J02WA74AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="btn btn-outline-dark" href="https://www.researchgate.net/profile/Mohsen-Shirali" target="_blank" rel="noopener">ResearchGate</a>
+        </div>
+        <p class="text-muted text-center mt-3 mb-0">
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-	<section id="post-grid" class="padding-large">
-		<div class="container-lg">
-			<div class="row">
-				<div class="section-header align-center mb-5">
-					<h2 class="display-5 m-0">Latest News</h2>
-					<span class="text-black-50">Accusan maiores alias conseaut equatur aut perferendi.</span>
-				</div>
-			</div>
-		</div>
-		<div class="container-lg">
-			<div class="row">
-				<div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="300">
-					<figure class="post-item">
-						<a href="#" class="post-link"><img src="images/post-thumb-1.jpg" alt="post"></a>
-						<figcaption class="py-4">
-							<div class="meta-wrap text-white">
-								<span class="meta-category">Graphic Design 2021</span> /
-								<span class="meta-date">July 1, 2021</span>
-							</div>
-							<h3>
-								<a href="single-post.html" class="text-white">Graphic Designing Useful Tips & Best
-									Practices</a>
-							</h3>
-						</figcaption>
-					</figure>
-				</div>
+<section id="projects" class="padding-large pt-0 bg-grey">
+  <div class="container-lg" data-aos="zoom-in-up">
+    <div class="row">
+      <div class="section-header align-center mb-5">
+        <!-- <span class="text-primary">Projects</span> -->
+        <h2 class="display-5 m-0 dark">Projects</h2>
+      </div>
+    </div>
+    <div class="row">
+      
+    <div class="col-md-6" data-aos="zoom-in-up">
+      <div class="card mb-4 h-100">
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">Robustness in Cyber-Physical Systems (CPS)</h4>
+		  <span class="fw-bold text-primary mb-2" style="font-size: 1.1rem;">2024–2025</span>
+          <!-- <div class="mt-auto">
+            <a class="btn btn-outline-dark" href="projects.html#robustness-in-cyber-physical-systems-cps">Read more</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    
 
-				<div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="600">
-					<figure class="post-item">
-						<a href="#" class="post-link"><img src="images/post-thumb-2.jpg" alt="post"></a>
-						<figcaption class="py-4">
-							<div class="meta-wrap text-white">
-								<span class="meta-category">Graphic Design 2021</span> /
-								<span class="meta-date">July 1, 2021</span>
-							</div>
-							<h3>
-								<a href="single-post.html" class="text-white">Basic typography rules for ui
-									designing</a>
-							</h3>
-						</figcaption>
-					</figure>
-				</div>
+    <div class="col-md-6" data-aos="zoom-in-up">
+      <div class="card mb-4 h-100">
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">ML-based Nitrate Reduction Front Prediction in Flanders</h4>
+		  <span class="fw-bold text-primary mb-2" style="font-size: 1.1rem;">2023–2024</span>
+          <!-- <div class="mt-auto">
+            <a class="btn btn-outline-dark" href="projects.html#ml-based-nitrate-reduction-front-prediction-in-flanders">Read more</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    
+	<div class="col-md-6" data-aos="zoom-in-up">
+      <div class="card mb-4 h-100">
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">Radio Access Network Architectures of 5G Cellular Networks</h4>
+		  <span class="fw-bold text-primary mb-2" style="font-size: 1.1rem;">2022-2023</span>
+          <!-- <div class="mt-auto">
+            <a class="btn btn-outline-dark" href="projects.html#radio-access-network-architectures-of-5g-cellular-networks">Read more</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
 
-				<div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="900">
-					<figure class="post-item">
-						<a href="#" class="post-link"><img src="images/post-thumb-3.jpg" alt="post"></a>
-						<figcaption class="py-4">
-							<div class="meta-wrap text-white">
-								<span class="meta-category">Graphic Design 2021</span> /
-								<span class="meta-date">July 1, 2021</span>
-							</div>
-							<h3>
-								<a href="single-post.html" class="text-white">Top 10 graphic designs review in 2021</a>
-							</h3>
-						</figcaption>
-					</figure>
-				</div>
-			</div>
-		</div>
-	</section>
+    
+	<div class="col-md-6" data-aos="zoom-in-up">
+      <div class="card mb-4 h-100">
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">Administrative IoT-based System for Agriculture Management</h4>
+		  <span class="fw-bold text-primary mb-2" style="font-size: 1.1rem;">2020–2022</span>
+          <!-- <div class="mt-auto">
+            <a class="btn btn-outline-dark" href="projects.html#administrative-iot-based-system-for-agriculture-management">Read more</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    
 
-	<section id="features" class="padding-large pt-0">
-		<div class="container-lg" data-aos="zoom-in-up" data-aos-delay="300">
-			<div class="row">
-				<div class="col-md-3">
-					<div class="milestone text-center">
-						<h3 class="display-1 m-0">12</h3>
-						<p class="text-uppercase">Years of experience</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="milestone text-center">
-						<h3 class="display-1 m-0">320+</h3>
-						<p class="text-uppercase">satisfied clients</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="milestone text-center">
-						<h3 class="display-1 m-0">55</h3>
-						<p class="text-uppercase">employees worldwide</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="milestone text-center">
-						<h3 class="display-1 m-0">220+</h3>
-						<p class="text-uppercase">projects completed</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <div class="col-md-6" data-aos="zoom-in-up">
+      <div class="card mb-4 h-100">
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">Interactive Process Mining for Behaviour Modelling</h4>
+		  <span class="fw-bold text-primary mb-2" style="font-size: 1.1rem;">2018–2024</span>
+          <!-- <div class="mt-auto">
+            <a class="btn btn-outline-dark" href="projects.html#interactive-process-mining-for-behaviour-modelling">Read more</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    
 
-	<footer id="footer" class="padding-large bg-primary">
-		<div class="container-lg text-white">
-			<div class="row">
-				<div class="footer-menu col-md-4">
-					<div class="footer-intro">
-						<a href="#" class="logo"><img src="images/logo-light.png"></a>
-					</div>
-					<div class="footer-address mt-4">
-						<p>Just feel free to contact if you wanna collaborate with me, or simply have a conversation.
-						</p>
-						<div class="mail-address">
-							<a href="#" class="text-white fs-3 text-decoration-underline">contact@yourcompany.com</a>
-						</div>
-					</div>
-				</div>
+    
+    
 
-				<div class="footer-menu col-6 col-md-2">
-					<ul class="list-unstyled">
-						<li><a href="#" class="text-white">Home</a></li>
-						<li><a href="#" class="text-white">About</a></li>
-						<li><a href="#" class="text-white">Portfolio</a></li>
-						<li><a href="#" class="text-white">Services</a></li>
-						<li><a href="#" class="text-white">Contact</a></li>
-					</ul>
-				</div>
+    <div class="col-md-6" data-aos="zoom-in-up">
+      <div class="card mb-4 h-100">
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">DCN-based Anonymous Communication for Privacy Preservation of IoT Devices</h4>
+		  <span class="fw-bold text-primary mb-2" style="font-size: 1.1rem;">2019–2023</span>
+          <!-- <div class="mt-auto">
+            <a class="btn btn-outline-dark" href="projects.html#dcn-based-anonymous-communication-for-privacy-preservation-of-iot-devices">Read more</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    <div class="text-center mt-2">
+      <a class="btn btn-dark" href="projects.html">Read more about all projects</a>
+    </div>
+  </div>
+</section>
 
-				<div class="footer-menu col-6 col-md-2">
-					<ul class="list-unstyled">
-						<li><a href="#" class="text-white">Privacy Policy</a></li>
-						<li><a href="#" class="text-white">Our Team</a></li>
-						<li><a href="#" class="text-white">Pricing</a></li>
-						<li><a href="#" class="text-white">Terms and Conditions</a></li>
-					</ul>
-				</div>
+<section id="awards" class="padding-large pt-0">
+  <div class="container-lg">
+    <div class="row">
+      <div class="section-header align-center mb-5">
+        <!-- <span class="text-primary">Awards and Recognition</span> -->
+        <h2 class="display-5 m-0">Awards and Achievements</h2>
+      </div>
+    </div>
+  </div>
 
-				<div class="footer-menu col-md-4">
-					<div class="subscribe">
-						<p>Subscribe to newsletter to get some updates related with branding, designs and more.</p>
-						<input class="rounded-2" type="text" name="email" placeholder="Write Your Email Address">
-						<button class="btn btn-dark">Subscribe</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+  <div class="container-lg">
+    <div class="row">
+      
+    <div class="col-md-4">
+  <div class="card mb-4" data-aos="zoom-in-up" data-aos-delay="0">
+    <div class="card-body">
+      <span class="card-subtitle mb-2 text-primary fs-6">2025</span>
+      <h4 class="card-title text-capitalize">Best Paper Award</h4>
+      <h5 class="card-title text-capitalize">The Practice of Enterprise Modeling (PoEM 2025)</h5>
+      <p class="card-text">Best Paper Award for "Context-Enriched Process Discovery from IoT Data Sources for Human Behavioral Monitoring, December 2025"</p>
+    </div>
+  </div>
+</div>
 
-	<div id="footer-bottom" class="py-3 bg-primary border-top">
-		<div class="container-lg text-white">
-			<div class="row align-items-center">
-				<div class="col-md-6">
-					<div class="social-links">
-						<ul class="justify-content-center justify-content-md-start m-0">
-							<li><a href="#"><i class="icon fs-5 icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon fs-5 icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon fs-5 icon-behance-square"></i></a></li>
-							<li><a href="#"><i class="icon fs-5 icon-youtube-play"></i></a></li>
-							<li><a href="#"><i class="icon fs-5 icon-pinterest-p"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6 text-center text-md-end">
-					<div class="copyright">
-						<p class="m-0">HTML Template by: <a href="https://templatesjungle.com" target="_blank"
-								class="text-decoration-underline fw-bold text-white">TemplatesJungle</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="col-md-4">
+      <div class="card mb-4" data-aos="zoom-in-up" data-aos-delay="0">
+        <div class="card-body">
+          <span class="card-subtitle mb-2 text-primary">2019</span>
+          <h4 class="card-title text-capitalize">DAAD scholarship</h4>
+		  <h5 class="card-title text-capitalize">Short-Term Research Grant</h5>
+          <p class="card-text">Research stay at University of Passau, 1/10/2019–31/3/2020</p>
+        </div>
+      </div>
+    </div>
+    
 
-	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-		crossorigin="anonymous"></script>
-	<script src="assets/vendor/chocolat/js/chocolat.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/script.js"></script>
+    <div class="col-md-4">
+      <div class="card mb-4" data-aos="zoom-in-up" data-aos-delay="150">
+        <div class="card-body">
+          <span class="card-subtitle mb-2 text-primary">2019</span>
+          <h4 class="card-title text-capitalize">MSRT scholarship</h4>
+		  <h5 class="card-title text-capitalize">Six-Month scholarship</h5>
+          <p class="card-text">Research stay at University of Passau, 1/04/2019–30/09/2019</p>
+        </div>
+      </div>
+    </div>
 
+	<div class="col-md-4">
+      <div class="card mb-4" data-aos="zoom-in-up" data-aos-delay="600">
+        <div class="card-body">
+          <span class="card-subtitle mb-2 text-primary">2020</span>
+          <h4 class="card-title text-capitalize">Patent</h4>
+		  <h5 class="card-title text-capitalize">Innovative neurofeedback system for cognitive rehabilitation of ADHD</h5>
+          <p class="card-text">Patent IR-10052, issued Jan 2020</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col-md-4">
+      <div class="card mb-4" data-aos="zoom-in-up" data-aos-delay="300">
+        <div class="card-body">
+          <span class="card-subtitle mb-2 text-primary">2022</span>
+          <h4 class="card-title text-capitalize">Certificate</h4>
+		  <h5 class="card-title text-capitalize">Process Mining: Data Science in Action</h5>
+          <p class="card-text">Eindhoven University of Technology (Coursera), Aug 2022</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col-md-4">
+      <div class="card mb-4" data-aos="zoom-in-up" data-aos-delay="450">
+        <div class="card-body">
+          <span class="card-subtitle mb-2 text-primary">2022</span>
+          <h4 class="card-title text-capitalize">Certificate</h4>
+		  <h5 class="card-title text-capitalize">Process Mining — From Theory to Execution</h5>
+          <p class="card-text">Celonis Academy, Jun 2022</p>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="padding-large bg-primary">
+  <div class="container-lg text-white" data-aos="zoom-in-up">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="display-5 mb-3">Contact</h2>
+        <p class="fs-5 mb-4">Feel free to reach out for collaboration, research discussions, or speaking opportunities.</p>
+        <!-- <p><strong>Email:</strong> <span id="email"></span></p>
+
+		<script>
+		const user = "mohsen.shirali";
+		const domain = "uclouvain.be";
+		const addr = `${user}@${domain}`;
+
+		const el = document.getElementById("email");
+		el.innerHTML = `<a href="mailto:${addr}">${addr}</a>`;
+		</script> -->
+
+		<p>
+		<strong>Email:</strong>
+		<button id="revealEmail" class="btn btn-outline-light btn-sm">Show</button>
+		<span id="email" class="ms-2"></span>
+		</p>
+
+		<script>
+		document.getElementById("revealEmail").addEventListener("click", () => {
+			const addr = "mohsen.shirali" + "@" + "uclouvain.be";
+			document.getElementById("email").innerHTML =
+			`<a href="mailto:${addr}">${addr}</a>`;
+		});
+		</script>
+		
+		<!-- <p><strong>Email:</strong> <button id="revealEmail" class="btn btn-outline-light btn-sm">Show</button></p>
+		<span id="email"></span>
+
+		<script>
+		document.getElementById("revealEmail").addEventListener("click", () => {
+			const addr = "mohsen.shirali" + "@" + "uclouvain.be";
+			document.getElementById("email").innerHTML =
+			`<a href="mailto:${addr}">${addr}</a>`;
+		});
+		</script> -->
+
+		<!-- <p class="mb-1"><strong>Email:</strong> <a class="text-white text-decoration-underline" href="mailto:mohsen.shirali@uclouvain.be">mohsen.shirali@uclouvain.be</a></p> -->
+        <!-- <p class="mb-0"><strong>Location:</strong> Leuven, Belgium</p> -->
+        <div class="d-flex flex-wrap gap-2 justify-content-center mt-4">
+          <!-- <a class="btn btn-dark" href="Mohsen_Shirali_CV.pdf" target="_blank" rel="noopener">Download CV</a> -->
+          <a class="btn btn-outline-light" href="https://scholar.google.com/citations?user=your_google_scholar_id" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="btn btn-outline-light" href="https://www.researchgate.net/profile/your_researchgate_id" target="_blank" rel="noopener">ResearchGate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-bottom" class="py-3 bg-primary border-top">
+  <div class="container-lg text-white">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="copyright">
+          <p class="m-0">© 2025 Mohsen Shirali</p>
+        </div>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p class="m-0">Template credits: <a href="https://templatesjungle.com" target="_blank"
+          class="text-decoration-underline fw-bold text-white">TemplatesJungle</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="assets/vendor/chocolat/js/chocolat.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
 </body>
-
 </html>
