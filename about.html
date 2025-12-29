@@ -52,11 +52,12 @@
   </div>
 </header>
 
+
 <div class="nav nav-overlay d-md-none">
   <div class="nav__content">
     <ul class="nav__list">
       <li class="nav__list-item mb-2"><a href="index.html#home">Home</a></li>
-      <li class="nav__list-item mb-2"><a href="about.html">About</a></li>
+      <li class="nav__list-item mb-2"><a href="about.html">About Me</a></li>
       <li class="nav__list-item mb-2"><a href="index.html#experience">Work Experience</a></li>
       <li class="nav__list-item mb-2"><a href="index.html#education">Education</a></li>
       <li class="nav__list-item mb-2"><a href="publications.html">Publications</a></li>
@@ -67,6 +68,7 @@
   </div>
 </div>
 
+
 <section class="jarallax bg-secondary" style="padding-top: 120px; padding-bottom: 60px;">
   <div class="container-lg">
     <div class="row align-items-center">
@@ -75,12 +77,17 @@
         <p class="fs-5 mb-0">Full biography</p>
       </div>
       <div class="col-lg-4 text-lg-end mt-3 mt-lg-0" data-aos="zoom-in-up">
-        <a class="btn btn-primary" href="Mohsen_Shirali_CV.pdf" target="_blank" rel="noopener">Download CV</a>
         <a class="btn btn-outline-dark ms-2" href="index.html">Back to home</a>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+      <div class="col-auto">
+        <img src="images/MohsenShirali-about-removebg.png" alt="Mohsen Shirali" class="img-fluid rounded-circle" style="width: 408px; height: 616px; object-fit: cover;">
       </div>
     </div>
   </div>
 </section>
+
 
 <section class="padding-large">
   <div class="container-lg" data-aos="zoom-in-up">
@@ -110,5 +117,29 @@
   <script src="assets/vendor/chocolat/js/chocolat.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
+
+<section class="bg-primary py-5 mt-5">
+  <div class="container-lg text-center text-white">
+    <p>
+      <strong>Email:</strong>
+      <button id="revealEmail" class="btn btn-outline-light btn-sm">Show</button>
+      <span id="email" class="ms-2"></span>
+    </p>
+    <div class="d-flex flex-wrap gap-2 justify-content-center mt-4">
+      <a class="btn btn-outline-light" href="https://scholar.google.com/citations?user=your_google_scholar_id" target="_blank" rel="noopener">Google Scholar</a>
+      <a class="btn btn-outline-light" href="https://www.researchgate.net/profile/your_researchgate_id" target="_blank" rel="noopener">ResearchGate</a>
+      <a class="btn btn-outline-light" href="https://www.linkedin.com/in/mohsen-shirali/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<script>
+document.getElementById("revealEmail").addEventListener("click", () => {
+    const addr = "mohsen.shirali" + "@" + "uclouvain.be";
+    document.getElementById("email").innerHTML =
+    `<a href="mailto:${addr}">${addr}</a>`;
+});
+</script>
+
 </body>
 </html>
