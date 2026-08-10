@@ -1667,3 +1667,631 @@ button.filter-button:hover {
   padding: 0.56rem 1.19rem;
   border-radius: 30px;
 }
+
+/* ============================================================
+   PROJECT EXPLORER
+   ============================================================ */
+
+.project-explorer {
+  position: relative;
+}
+
+
+/* ------------------------------------------------------------
+   Left project list
+   ------------------------------------------------------------ */
+
+.project-list-wrapper {
+  position: sticky;
+  top: 110px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+
+.project-list-item {
+  width: 100%;
+  border: 1px solid rgba(47, 47, 47, 0.12);
+  border-radius: 0.8rem;
+
+  background: #fff;
+  color: var(--dark-color);
+
+  padding: 1rem 1.1rem;
+
+  text-align: left;
+
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.project-list-item:hover,
+.project-list-item:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  outline: none;
+
+  transform: translateX(4px);
+
+  box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.06);
+}
+
+
+.project-list-item.active {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #fff;
+
+  transform: translateX(6px);
+
+  box-shadow: 0 0.5rem 1.3rem rgba(0, 0, 0, 0.08);
+}
+
+
+.project-list-item.active:hover,
+.project-list-item.active:focus {
+  color: #fff;
+}
+
+
+/* ------------------------------------------------------------
+   Right detail panel
+   ------------------------------------------------------------ */
+
+.project-detail-card {
+  position: relative;
+
+  min-height: 540px;
+
+  background: #fff;
+
+  border: 1px solid rgba(47, 47, 47, 0.1);
+  border-radius: 1rem;
+
+  overflow: hidden;
+
+  box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.06);
+}
+
+
+.project-detail-content {
+  padding: 2.5rem;
+}
+
+
+.project-detail-title {
+  margin-bottom: 1.5rem;
+}
+
+
+.project-detail-description {
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+
+
+/* ------------------------------------------------------------
+   Project gallery
+   ------------------------------------------------------------ */
+
+.project-gallery {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 1.2rem;
+
+  margin-top: 2rem;
+}
+
+
+.project-media-item {
+  margin: 0;
+
+  overflow: hidden;
+
+  border-radius: 0.8rem;
+
+  background: var(--grey-color);
+}
+
+
+/* ============================================================
+    PROJECT DETAIL
+    ============================================================ */
+
+.project-detail-card {
+  position: relative;
+
+  min-height: 540px;
+
+  background: #fff;
+
+  border: 1px solid rgba(47, 47, 47, 0.1);
+
+  border-radius: 1rem;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 0.7rem 2rem rgba(0, 0, 0, 0.06);
+}
+
+
+.project-detail-content {
+  padding: 2.5rem;
+}
+
+
+.project-detail-title {
+  margin-bottom: 1.5rem;
+}
+
+
+/* ------------------------------------------------------------
+    Description
+    ------------------------------------------------------------ */
+
+.project-detail-description {
+  line-height: 1.8;
+}
+
+
+.project-detail-description p {
+  margin-bottom: 1.15rem;
+}
+
+
+.project-detail-description p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/* ============================================================
+    PROJECT MEDIA
+    ============================================================ */
+
+.project-gallery {
+  width: 100%;
+
+  margin-top: 2.5rem;
+}
+
+
+/* ------------------------------------------------------------
+    Clickable image button
+    ------------------------------------------------------------ */
+
+.project-media-button {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  padding: 1rem;
+
+  border: 1px solid rgba(47, 47, 47, 0.10);
+
+  border-radius: 0.8rem;
+
+  background: #fafafa;
+
+  cursor: zoom-in;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.project-media-button:hover,
+.project-media-button:focus {
+  border-color: var(--accent-color);
+
+  box-shadow:
+    0 0.6rem 1.5rem rgba(0, 0, 0, 0.08);
+
+  transform: translateY(-2px);
+
+  outline: none;
+}
+
+
+/*
+    IMPORTANT:
+    preserve the complete technical figure.
+
+    Do NOT use object-fit: cover here.
+  */
+
+.project-media-button img {
+  display: block;
+
+  max-width: 100%;
+
+  width: auto;
+
+  height: auto;
+
+  max-height: 520px;
+
+  margin: auto;
+
+  object-fit: contain;
+}
+
+
+
+/* ============================================================
+    INDIVIDUAL-CAPTION GALLERY
+
+    Figure
+    Caption
+
+    Figure
+    Caption
+    ============================================================ */
+
+.project-gallery--individual {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2.3rem;
+}
+
+
+.project-media-item {
+  width: 100%;
+
+  margin: 0;
+}
+
+
+.project-gallery--individual .project-media-button {
+  min-height: 280px;
+}
+
+
+.project-media-caption {
+  margin-top: 0.8rem;
+
+  padding: 0 0.5rem;
+
+  text-align: center;
+
+  font-size: 0.95rem;
+
+  line-height: 1.5;
+
+  color: var(--body-text-color);
+}
+
+
+
+/* ============================================================
+    SHARED-CAPTION GALLERY
+
+    [ Image 1 ] [ Image 2 ] [ Image 3 ]
+
+              Shared caption
+    ============================================================ */
+
+.project-gallery--shared .project-media-group {
+  width: 100%;
+
+  margin: 0;
+}
+
+
+.project-media-row {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit,
+      minmax(200px, 1fr));
+
+  gap: 1rem;
+
+  align-items: stretch;
+}
+
+
+.project-media-shared-item {
+  display: flex;
+
+  min-width: 0;
+}
+
+
+.project-media-shared-item .project-media-button {
+  height: 100%;
+
+  min-height: 260px;
+}
+
+
+.project-media-shared-item .project-media-button img {
+  max-height: 350px;
+}
+
+
+.project-media-group-caption {
+  margin-top: 0.9rem;
+
+  padding: 0 0.5rem;
+
+  text-align: center;
+
+  font-size: 0.95rem;
+
+  line-height: 1.5;
+
+  color: var(--body-text-color);
+}
+
+
+
+/* ============================================================
+    IMAGE MODAL
+    ============================================================ */
+
+.project-image-modal-content {
+  border: 0;
+
+  border-radius: 1rem;
+
+  background: #fff;
+
+  overflow: hidden;
+}
+
+
+.project-modal-image {
+  display: block;
+
+  width: auto;
+
+  max-width: 100%;
+
+  height: auto;
+
+  max-height: 78vh;
+
+  margin: 0 auto;
+
+  object-fit: contain;
+}
+
+
+.project-modal-caption {
+  max-width: 900px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  padding: 0 1rem 1rem;
+
+  font-size: 1rem;
+
+  line-height: 1.55;
+}
+
+
+
+/* ============================================================
+    LEFT PROJECT LIST
+    ============================================================ */
+
+/*
+    There are now many projects.
+    Allow the left list to scroll independently on shorter screens.
+  */
+
+.project-list-wrapper {
+  position: sticky;
+
+  top: 100px;
+
+  max-height: calc(100vh - 130px);
+
+  overflow-y: auto;
+
+  padding-right: 0.5rem;
+}
+
+
+.project-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.7rem;
+}
+
+
+
+/* ============================================================
+    TABLET
+    ============================================================ */
+
+@media screen and (max-width: 991px) {
+
+  .project-list-wrapper {
+    position: static;
+
+    max-height: none;
+
+    overflow: visible;
+
+    padding-right: 0;
+  }
+
+
+  .project-detail-card {
+    min-height: auto;
+  }
+
+
+  .project-detail-content {
+    padding: 2rem;
+  }
+
+
+  /*
+      Shared-caption figures can still remain side-by-side
+      when space permits.
+    */
+
+  .project-media-row {
+    grid-template-columns:
+      repeat(auto-fit,
+        minmax(180px, 1fr));
+  }
+
+}
+
+
+
+/* ============================================================
+    MOBILE
+    ============================================================ */
+
+@media screen and (max-width: 576px) {
+
+  .project-detail-content {
+    padding: 1.4rem;
+  }
+
+
+  /*
+      On a phone, even shared figures should stack because
+      otherwise diagrams become too small to read.
+    */
+
+  .project-media-row {
+    grid-template-columns: 1fr;
+  }
+
+
+  .project-media-button {
+    min-height: auto;
+  }
+
+
+  .project-gallery--individual .project-media-button,
+
+  .project-media-shared-item .project-media-button {
+    min-height: auto;
+  }
+
+
+  .project-media-button img {
+    max-height: none;
+  }
+
+
+  .project-modal-image {
+    max-height: 72vh;
+  }
+
+}
+
+
+/* ------------------------------------------------------------
+   10-second rotation progress
+   ------------------------------------------------------------ */
+
+.project-progress {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 4px;
+
+  background: rgba(143, 109, 78, 0.12);
+
+  overflow: hidden;
+}
+
+
+.project-progress-bar {
+  height: 100%;
+
+  width: 0;
+
+  background: var(--accent-color);
+}
+
+
+/* ------------------------------------------------------------
+   Tablet/mobile
+   ------------------------------------------------------------ */
+
+@media screen and (max-width: 991px) {
+
+  .project-list-wrapper {
+    position: static;
+  }
+
+
+  .project-list {
+    margin-bottom: 1rem;
+  }
+
+
+  .project-detail-card {
+    min-height: auto;
+  }
+
+
+  .project-detail-content {
+    padding: 2rem;
+  }
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+  .project-list-item {
+    padding: 0.85rem 1rem;
+
+    font-size: 0.95rem;
+  }
+
+
+  .project-detail-content {
+    padding: 1.5rem;
+  }
+
+
+  .project-media-item img {
+    height: auto;
+  }
+
+}
