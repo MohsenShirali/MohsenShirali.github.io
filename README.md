@@ -12,6 +12,7 @@ I received my Ph.D. (2025) and M.Sc. (2013) in Computer Engineering from Shahid 
 - About (full bio): `about.html`
 - Publications (full list): `publications.html`
 - Projects (full descriptions): `projects.html`
+- Activities (full description of professional activities): `activities.html`
 <!-- - CV: `Mohsen_Shirali_CV.pdf` -->
 
 

@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Professional Activities | Mohsen Shirali</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="Mohsen Shirali">
+
+    <meta name="description"
+        content="Professional activities of Mohsen Shirali, including conference and workshop organisation, research-community engagement, technical program committees, professional memberships and peer reviewing.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <link rel="canonical" href="https://mohsenshirali.github.io/activities.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mohsen Shirali">
+    <meta property="og:title" content="Professional Activities | Mohsen Shirali">
+    <meta property="og:description"
+        content="Conference organisation, workshops, professional memberships, TPC service and peer-review activities.">
+    <meta property="og:url" content="https://mohsenshirali.github.io/activities.html">
+    <meta property="og:image" content="https://mohsenshirali.github.io/images/banner_pic-removebg_flip.png">
+    <meta property="og:image:alt" content="Mohsen Shirali">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Professional Activities | Mohsen Shirali">
+    <meta name="twitter:description" content="Research-community and professional activities of Mohsen Shirali.">
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://mohsenshirali.github.io/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Professional Activities",
+        "item": "https://mohsenshirali.github.io/activities.html"
+      }
+    ]
+  }
+  </script>
+
+    <link rel="stylesheet" type="text/css" href="assets/icomoon/icomoon.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/vendor/chocolat/css/chocolat.css">
+
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <!--
+    Page-specific styles are included here so this page works without
+    requiring any additional activity-related patches in style.css.
+  -->
+    <style>
+        :root {
+            --activity-accent: #8f6d4e;
+            --activity-text: #2f2f2f;
+            --activity-muted: #5f5f5f;
+            --activity-border: rgba(47, 47, 47, 0.12);
+            --activity-soft-bg: #f7f5f2;
+            --activity-card-bg: #ffffff;
+        }
+
+        .activities-page,
+        .activities-page p,
+        .activities-page span,
+        .activities-page li {
+            color: var(--activity-text);
+        }
+
+        .activities-page h1,
+        .activities-page h2,
+        .activities-page h3,
+        .activities-page h4,
+        .activities-page strong {
+            color: var(--activity-text);
+        }
+
+        .activities-page .activity-section-subtitle {
+            color: var(--activity-muted) !important;
+            opacity: 1 !important;
+        }
+
+        /* ============================================================
+       Conference / workshop explorer
+       ============================================================ */
+
+        .activity-explorer {
+            position: relative;
+        }
+
+        .activity-list-wrapper {
+            position: sticky;
+            top: 100px;
+        }
+
+        .activity-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .activity-list-item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1rem 1.1rem;
+            border: 1px solid var(--activity-border);
+            border-radius: 0.8rem;
+            background: #fff;
+            color: var(--activity-text);
+            text-align: left;
+            cursor: pointer;
+            transition:
+                background-color 0.25s ease,
+                color 0.25s ease,
+                border-color 0.25s ease,
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .activity-list-title {
+            color: inherit !important;
+            font-family: var(--heading-font);
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.35;
+        }
+
+        .activity-list-subtitle {
+            margin-top: 0.3rem;
+            color: inherit !important;
+            font-size: 0.85rem;
+            font-weight: 600;
+            opacity: 0.76;
+        }
+
+        .activity-list-item:hover,
+        .activity-list-item:focus {
+            border-color: var(--activity-accent);
+            color: var(--activity-accent);
+            outline: none;
+            transform: translateX(4px);
+            box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.06);
+        }
+
+        .activity-list-item.active {
+            background: var(--activity-accent);
+            border-color: var(--activity-accent);
+            color: #fff;
+            transform: translateX(6px);
+            box-shadow: 0 0.5rem 1.3rem rgba(0, 0, 0, 0.08);
+        }
+
+        .activity-list-item.active .activity-list-title,
+        .activity-list-item.active .activity-list-subtitle {
+            color: #fff !important;
+        }
+
+        /* ============================================================
+       Right activity panel
+       ============================================================ */
+
+        .activity-detail-card {
+            position: relative;
+            min-height: 560px;
+            background: var(--activity-card-bg);
+            border: 1px solid rgba(47, 47, 47, 0.10);
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.06);
+        }
+
+        .activity-detail-content {
+            padding: 2.5rem;
+        }
+
+        .activity-detail-title {
+            margin-bottom: 0.55rem;
+            color: var(--activity-text) !important;
+        }
+
+        .activity-role {
+            margin-bottom: 1.4rem;
+            color: var(--activity-accent) !important;
+            font-family: var(--heading-font);
+            font-size: 1.15rem;
+            font-weight: 800;
+        }
+
+        .activity-meta-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding: 1.1rem 1.2rem;
+            border-radius: 0.8rem;
+            background: var(--activity-soft-bg);
+        }
+
+        .activity-meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        .activity-meta-label {
+            color: var(--activity-accent) !important;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .activity-meta-item>span:last-child {
+            color: var(--activity-text) !important;
+            font-weight: 600;
+        }
+
+        .activity-description {
+            line-height: 1.8;
+            color: var(--activity-text) !important;
+        }
+
+        .activity-description p {
+            margin-bottom: 1.15rem;
+            color: var(--activity-text) !important;
+        }
+
+        .activity-description p:last-child {
+            margin-bottom: 0;
+        }
+
+        .activity-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem;
+            margin-top: 1.5rem;
+        }
+
+        /* ============================================================
+       Activity gallery
+       ============================================================ */
+
+        .activity-gallery {
+            width: 100%;
+            margin-top: 2.3rem;
+        }
+
+        .activity-media-group {
+            width: 100%;
+            margin: 0;
+        }
+
+        .activity-media-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+            align-items: stretch;
+        }
+
+        .activity-media-item {
+            min-width: 0;
+        }
+
+        .activity-media-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            min-height: 220px;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid rgba(47, 47, 47, 0.10);
+            border-radius: 0.8rem;
+            background: #f8f8f8;
+            cursor: zoom-in;
+            transition:
+                transform 0.25s ease,
+                border-color 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .activity-media-button:hover,
+        .activity-media-button:focus {
+            border-color: var(--activity-accent);
+            outline: none;
+            transform: translateY(-2px);
+            box-shadow: 0 0.55rem 1.4rem rgba(0, 0, 0, 0.08);
+        }
+
+        .activity-media-button img {
+            display: block;
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .activity-media-caption,
+        .activity-media-individual-caption {
+            color: var(--activity-muted) !important;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .activity-media-caption {
+            margin-top: 0.9rem;
+            padding: 0 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .activity-media-individual-caption {
+            margin-top: 0.7rem;
+            padding: 0 0.4rem;
+            font-size: 0.9rem;
+        }
+
+        /* ============================================================
+       Slideshow progress
+       ============================================================ */
+
+        .activity-progress {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 4px;
+            overflow: hidden;
+            background: rgba(143, 109, 78, 0.14);
+        }
+
+        .activity-progress-bar {
+            width: 0;
+            height: 100%;
+            background: var(--activity-accent);
+        }
+
+        /* ============================================================
+       Membership and service cards
+       ============================================================ */
+
+        .activity-soft-section {
+            background: var(--activity-soft-bg);
+        }
+
+        .community-role-card,
+        .service-card {
+            position: relative;
+            height: 100%;
+            padding: 2rem;
+            border: 1px solid rgba(47, 47, 47, 0.10);
+            border-radius: 1rem;
+            background: #fff;
+            color: var(--activity-text) !important;
+            box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.045);
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .community-role-card:hover,
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0.8rem 1.8rem rgba(0, 0, 0, 0.07);
+        }
+
+        .community-role-card h3,
+        .service-card h3 {
+            color: var(--activity-text) !important;
+        }
+
+        .community-role-card p,
+        .service-card p {
+            color: var(--activity-muted) !important;
+        }
+
+        .community-role-badge,
+        .service-type {
+            display: inline-block;
+            margin-bottom: 1rem;
+            padding: 0.35rem 0.7rem;
+            border-radius: 2rem;
+            background: rgba(143, 109, 78, 0.12);
+            color: var(--activity-accent) !important;
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.02em;
+        }
+
+        .community-link {
+            color: var(--activity-accent) !important;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .community-link:hover {
+            text-decoration: underline;
+        }
+
+        /* ============================================================
+       Peer review
+       ============================================================ */
+
+        .review-service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .review-service-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+            padding: 1.4rem;
+            border: 1px solid rgba(47, 47, 47, 0.09);
+            border-radius: 0.85rem;
+            background: #fff;
+        }
+
+        .review-service-item strong {
+            color: var(--activity-text) !important;
+        }
+
+        .review-service-item .review-publisher {
+            color: var(--activity-muted) !important;
+        }
+
+        .review-service-type {
+            color: var(--activity-accent) !important;
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        /* ============================================================
+       Image modal
+       ============================================================ */
+
+        .activity-image-modal-content {
+            overflow: hidden;
+            border: 0;
+            border-radius: 1rem;
+            background: #fff;
+        }
+
+        .activity-modal-image {
+            display: block;
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 78vh;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+
+        .activity-modal-caption {
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 1rem 1rem;
+            color: var(--activity-muted) !important;
+            font-size: 1rem;
+            line-height: 1.55;
+        }
+
+        /* ============================================================
+       Responsive
+       ============================================================ */
+
+        @media screen and (max-width: 991px) {
+            .activity-list-wrapper {
+                position: static;
+            }
+
+            .activity-detail-card {
+                min-height: auto;
+            }
+
+            .activity-detail-content {
+                padding: 2rem;
+            }
+
+            .review-service-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .activity-detail-content {
+                padding: 1.4rem;
+            }
+
+            .activity-meta-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .activity-media-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .activity-media-button {
+                min-height: auto;
+            }
+
+            .activity-media-button img {
+                height: auto;
+                max-height: 420px;
+                object-fit: contain;
+            }
+
+            .review-service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .community-role-card,
+            .service-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+
+<body class="activities-page">
+
+    <div id="overlayer">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+
+    <!-- =========================================================
+       Header
+       ========================================================= -->
+
+    <header id="header">
+        <div class="header-wrap" data-aos="fade">
+
+            <div class="main-logo">
+                <a href="index.html" title="Mohsen Shirali"></a>
+            </div>
+
+            <nav id="navbar" class="d-none d-lg-block">
+                <ul class="list-unstyled d-flex gap-3 m-0 align-items-center">
+                    <li><a class="text-decoration-none" href="index.html#home">Home</a></li>
+                    <li><a class="text-decoration-none" href="about.html">About</a></li>
+                    <li><a class="text-decoration-none" href="index.html#experience">Experience</a></li>
+                    <li><a class="text-decoration-none" href="index.html#education">Education</a></li>
+                    <li><a class="text-decoration-none" href="publications.html">Publications</a></li>
+                    <li><a class="text-decoration-none" href="projects.html">Projects</a></li>
+                    <li>
+                        <a class="text-decoration-none active" href="activities.html" aria-current="page">
+                            Activities
+                        </a>
+                    </li>
+                    <li><a class="text-decoration-none" href="index.html#awards">Awards</a></li>
+                    <li><a class="text-decoration-none" href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav id="navbar-mobile" class="d-lg-none">
+                <input id="menu-toggle" type="checkbox">
+                <label class="menu-btn" for="menu-toggle"><span></span></label>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <div class="nav nav-overlay d-lg-none">
+        <div class="nav__content">
+            <ul class="nav__list">
+                <li class="nav__list-item mb-2"><a href="index.html#home">Home</a></li>
+                <li class="nav__list-item mb-2"><a href="about.html">About</a></li>
+                <li class="nav__list-item mb-2"><a href="index.html#experience">Work Experience</a></li>
+                <li class="nav__list-item mb-2"><a href="index.html#education">Education</a></li>
+                <li class="nav__list-item mb-2"><a href="publications.html">Publications</a></li>
+                <li class="nav__list-item mb-2"><a href="projects.html">Projects</a></li>
+                <li class="nav__list-item mb-2"><a href="activities.html">Activities</a></li>
+                <li class="nav__list-item mb-2"><a href="index.html#awards">Awards</a></li>
+                <li class="nav__list-item mb-2"><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- =========================================================
+       Page header
+       ========================================================= -->
+
+    <section class="jarallax bg-secondary" style="padding-top: 120px; padding-bottom: 60px;">
+        <div class="container-lg">
+            <div class="row align-items-center">
+
+                <div class="col-lg-8" data-aos="zoom-in-up">
+                    <h1 class="display-4">Professional Activities</h1>
+                    <p class="fs-5 mb-0" style="color:#3f3f3f;">
+                        Research community engagement, conference and workshop organisation,
+                        professional memberships, technical program committees and peer-review service
+                    </p>
+                </div>
+
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0" data-aos="zoom-in-up">
+                    <a class="btn btn-outline-dark" href="index.html">Back to home</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+       Conferences and workshops
+       ========================================================= -->
+
+    <section id="conferences-workshops" class="padding-large">
+        <div class="container-lg">
+
+            <div class="section-header mb-5" data-aos="zoom-in-up">
+                <h2 class="display-5">Conferences and Workshops</h2>
+                <p class="fs-5 activity-section-subtitle mb-0">
+                    Selected activities in conference organisation, workshop coordination,
+                    presentation and community building.
+                </p>
+            </div>
+
+
+            <div class="activity-explorer" data-aos="zoom-in-up">
+                <div class="row g-4">
+
+                    <!-- Left column -->
+                    <div class="col-lg-4">
+                        <div class="activity-list-wrapper">
+
+                            <div id="activityList" class="activity-list" role="list"
+                                aria-label="Conference and workshop activities">
+
+                                <button type="button" class="activity-list-item active" data-activity="ces-2026"
+                                    aria-pressed="true">
+                                    <span class="activity-list-title">
+                                        Critical Embedded Systems Conference
+                                    </span>
+                                    <span class="activity-list-subtitle">CES 2026</span>
+                                </button>
+
+
+                                <button type="button" class="activity-list-item" data-activity="icee-wsn"
+                                    aria-pressed="false">
+                                    <span class="activity-list-title">
+                                        Wireless Sensor Network Workshop
+                                    </span>
+                                    <span class="activity-list-subtitle">ICEE 2016</span>
+                                </button>
+
+
+                                <button type="button" class="activity-list-item" data-activity="smart-health-wsn"
+                                    aria-pressed="false">
+                                    <span class="activity-list-title">
+                                        Wireless Sensor Network Workshop
+                                    </span>
+                                    <span class="activity-list-subtitle">
+                                        Smart Health and Wellbeing 2015
+                                    </span>
+                                </button>
+
+
+                                <button type="button" class="activity-list-item" data-activity="smart-health-2015"
+                                    aria-pressed="false">
+                                    <span class="activity-list-title">
+                                        2nd International Smart Health and Wellbeing
+                                    </span>
+                                    <span class="activity-list-subtitle">
+                                        Organisational Team
+                                    </span>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Right column -->
+                    <div class="col-lg-8">
+                        <article id="activityDetail" class="activity-detail-card" aria-live="polite">
+                            <div class="activity-detail-content">
+
+                                <h2 id="activityTitle" class="activity-detail-title"></h2>
+
+                                <div id="activityRole" class="activity-role"></div>
+
+                                <div class="activity-meta-grid">
+
+                                    <div class="activity-meta-item">
+                                        <span class="activity-meta-label">Venue</span>
+                                        <span id="activityVenue"></span>
+                                    </div>
+
+                                    <div class="activity-meta-item">
+                                        <span class="activity-meta-label">Date</span>
+                                        <span id="activityDate"></span>
+                                    </div>
+
+                                </div>
+
+                                <div id="activityDescription" class="activity-description fs-5"></div>
+
+                                <div id="activityLinks" class="activity-links"></div>
+
+                                <div id="activityGallery" class="activity-gallery" aria-label="Activity photographs">
+                                </div>
+
+                            </div>
+
+                            <div class="activity-progress" aria-hidden="true">
+                                <div id="activityProgressBar" class="activity-progress-bar"></div>
+                            </div>
+
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+       Professional memberships
+       ========================================================= -->
+
+    <section id="professional-memberships" class="padding-large activity-soft-section">
+        <div class="container-lg">
+
+            <div class="section-header mb-5" data-aos="zoom-in-up">
+                <h2 class="display-5">Professional Memberships &amp; Community Roles</h2>
+                <p class="fs-5 activity-section-subtitle mb-0">
+                    Participation in professional and research communities related to
+                    communications, digital technologies and next-generation intelligent systems.
+                </p>
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-md-6" data-aos="zoom-in-up">
+                    <div class="community-role-card">
+
+                        <div class="community-role-badge">Associate Member</div>
+
+                        <h3 class="h4">Datacom Industry Association</h3>
+
+                        <p class="mb-3">
+                            Participation in the Datacom Industry Association community and its
+                            activities related to data communication technologies and
+                            industry–research collaboration.
+                        </p>
+
+                        <a href="https://datacom-ia.eu/" class="community-link" target="_blank"
+                            rel="noopener noreferrer">
+                            Visit association website →
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-6" data-aos="zoom-in-up">
+                    <div class="community-role-card">
+
+                        <div class="community-role-badge">Member (UCLouvain)</div>
+
+                        <h3 class="h4">one6G Association</h3>
+
+                        <p class="mb-0">
+                            Participation in one6G activities as a member representing UCLouvain,
+                            contributing to discussions and collaborative activities related to future
+                            communication technologies, standards and their applications.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+       Technical Program Committees
+       ========================================================= -->
+
+    <section id="technical-program-committees" class="padding-large">
+        <div class="container-lg">
+
+            <div class="section-header mb-5" data-aos="zoom-in-up">
+                <h2 class="display-5">Technical Program Committees</h2>
+                <p class="fs-5 activity-section-subtitle mb-0">
+                    Service on technical program committees for workshops addressing emerging
+                    research topics in autonomous systems, artificial intelligence and process mining.
+                </p>
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-md-6" data-aos="zoom-in-up">
+                    <div class="service-card">
+
+                        <div class="service-type">TPC Member</div>
+
+                        <h3 class="h4">EASI Workshop</h3>
+
+                        <p>Engineering Autonomous Systems Intelligence</p>
+
+                        <a href="https://easi-workshop.github.io/" class="community-link" target="_blank"
+                            rel="noopener noreferrer">
+                            Visit workshop website →
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-6" data-aos="zoom-in-up">
+                    <div class="service-card">
+
+                        <div class="service-type">TPC Member</div>
+
+                        <h3 class="h4">GenAI4PM Workshop</h3>
+
+                        <p>Generative AI for Process Mining</p>
+
+                        <a href="https://www.genai4pm2027.info/" class="community-link" target="_blank"
+                            rel="noopener noreferrer">
+                            Visit workshop website →
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+       Peer review
+       ========================================================= -->
+
+    <section id="peer-review" class="padding-large activity-soft-section">
+        <div class="container-lg">
+
+            <div class="section-header mb-5" data-aos="zoom-in-up">
+                <h2 class="display-5">Peer Review Service</h2>
+                <p class="fs-5 activity-section-subtitle mb-0">
+                    Reviewer for international journals and conferences in IoT, artificial
+                    intelligence, computing, communications and intelligent transportation systems.
+                </p>
+            </div>
+
+
+            <div class="review-service-grid" data-aos="zoom-in-up">
+
+                <div class="review-service-item">
+                    <span class="review-service-type">Journal</span>
+                    <strong>Internet of Things</strong>
+                    <span class="review-publisher">Elsevier</span>
+                </div>
+
+                <div class="review-service-item">
+                    <span class="review-service-type">Journal</span>
+                    <strong>IEEE Access</strong>
+                    <span class="review-publisher">IEEE</span>
+                </div>
+
+                <div class="review-service-item">
+                    <span class="review-service-type">Journal</span>
+                    <strong>Computing</strong>
+                    <span class="review-publisher">Springer Nature</span>
+                </div>
+
+                <div class="review-service-item">
+                    <span class="review-service-type">Journal</span>
+                    <strong>
+                        IEEE Transactions on Intelligent Transportation Systems (T-ITS)
+                    </strong>
+                    <span class="review-publisher">IEEE</span>
+                </div>
+
+                <div class="review-service-item">
+                    <span class="review-service-type">Journal</span>
+                    <strong>IEEE Transactions on Networking</strong>
+                    <span class="review-publisher">IEEE</span>
+                </div>
+
+                <div class="review-service-item">
+                    <span class="review-service-type">Conference</span>
+                    <strong>IEEE WCNC 2024</strong>
+                    <span class="review-publisher">IEEE</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+       Enlarged image modal
+       ========================================================= -->
+
+    <div class="modal fade" id="activityImageModal" tabindex="-1" aria-labelledby="activityImageModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content activity-image-modal-content">
+
+                <div class="modal-header border-0">
+                    <h5 id="activityImageModalLabel" class="modal-title visually-hidden">
+                        Enlarged activity photograph
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body text-center pt-0">
+                    <img id="activityModalImage" class="activity-modal-image" src="" alt="">
+
+                    <p id="activityModalCaption" class="activity-modal-caption mt-3 mb-0"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =========================================================
+       Scripts
+       ========================================================= -->
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/vendor/chocolat/js/chocolat.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <script>
+        /* ============================================================
+           Activity data
+           ============================================================ */
+
+        const activities = {
+
+            "ces-2026": {
+                title:
+                    "The Critical Embedded Systems Conference (CES 2026)",
+
+                role:
+                    "Conference Organiser and Chair",
+
+                venue:
+                    "UCLouvain, Louvain-la-Neuve (Belgium)",
+
+                date:
+                    "30 June 2026 - 2 July 2026",
+
+                description: [
+                    "CES 2026 was organised over three days and structured into 12 main sessions: an opening session, six thematic technical sessions, an FNRS Contact Group session, a PhD session, a poster session and two panel discussions. The programme comprised 22 scheduled presentations, including three international keynote talks, 16 invited scientific and industrial talks, a presentation introducing the CONTRIBUTE consortium, and two short presentations introducing the CES Chair and the FNRS Contact Group.",
+
+                    "In addition, the conference featured six PhD presentations, ten posters, five demonstrations and an industrial visit to Alstom. The thematic programme addressed security, privacy and trust in cyber-physical systems; real-world transport applications; learning-enabled real-time systems; artificial intelligence in critical systems; secure and privacy-preserving data management; reliable connectivity for smart transport; and verification, resilience and robustness. Application domains included railway systems, automotive transport, electric vehicles, autonomous ships, inland waterways, industrial automation, robotics and connected infrastructure.",
+
+                    "The conference was organised and co-chaired by Mohsen Shirali and Cristel Pelsser as members of the Chair of Critical Embedded Systems at UCLouvain, in collaboration with the CONTRIBUTE consortium and industrial partners including AISIN and ALSTOM."
+                ],
+
+                /*
+                  Put your four CES photographs in this folder, or change only
+                  these four src values to match your actual filenames.
+                */
+                galleryCaption:
+                    "Highlights from the Critical Embedded Systems Conference (CES 2026) at UCLouvain.",
+
+                images: [
+                    {
+                        src: "images/activities/CES-1.jpg",
+                        alt: "Critical Embedded Systems Conference 2026 photograph 1"
+                    },
+                    {
+                        src: "images/activities/CES-2.jpg",
+                        alt: "Critical Embedded Systems Conference 2026 photograph 2"
+                    },
+                    {
+                        src: "images/activities/CES-3.jpg",
+                        alt: "Critical Embedded Systems Conference 2026 photograph 3"
+                    },
+                    {
+                        src: "images/activities/CES-4.jpg",
+                        alt: "Critical Embedded Systems Conference 2026 photograph 4"
+                    }
+                ],
+
+                links: [{ label: "More information on Critical Embedded Systems Conference 2026", url: "https://sites.uclouvain.be/ces-conference" }]
+            },
+
+
+            "icee-wsn": {
+                title:
+                    "Wireless Sensor Network Workshop",
+
+                role:
+                    "Workshop Organiser and Presenter",
+
+                venue:
+                    "24th Iranian Conference on Electrical Engineering (ICEE 2016), Shiraz University, Shiraz (Iran)",
+
+                date:
+                    "May 2016",
+
+                description: [
+                    "The Wireless Sensor Network (WSN) Workshop was a practical training session held as one of the workshops of the 24th Iranian Conference on Electrical Engineering (ICEE 2016). It provided participants with hands-on experience using real wireless sensor devices and complemented the practical activities with the theoretical foundations required to understand wireless sensor networks.",
+
+                    "The workshop was organised by the e-Sense Research Lab in collaboration with the IEEE Iran Section Education Activities Committee and combined theoretical and practical sessions. In the theoretical session, Dr. Ghassemian introduced the foundations of wireless sensor networks, covering concepts from the hardware layer to application-level considerations.",
+
+                    "During the practical session, Mohsen Shirali introduced different types of educational sensor nodes capable of sensing environmental conditions and demonstrated how they could be programmed and used to collect and process environmental data and construct practical wireless sensor network applications."
+                ],
+
+                galleryCaption: "Highlights of Wireless Sensor Network Workshop at ICEE 2016",
+                images: [
+                    { src: "images/activities/WSN-ICEE-1.jpg", alt: "Wireless Sensor Network Workshop at ICEE 2016 photograph 1" },
+                    { src: "images/activities/WSN-ICEE-2.jpg", alt: "Wireless Sensor Network Workshop at ICEE 2016 photograph 2" },
+                ],
+
+                links: [
+                    {
+                        label: "More Information on WSN workshop at ICEE 2016",
+                        url: "https://facultymembers.sbu.ac.ir/ghassemian/wsn-workshop-in-icee2016"
+                    }
+                ]
+            },
+
+
+            "smart-health-wsn": {
+                title:
+                    "Wireless Sensor Network Workshop",
+
+                role:
+                    "Workshop Organiser and Presenter",
+
+                venue:
+                    "2nd International Smart Health and Wellbeing, Shahid Beheshti University (SBU), Tehran (Iran)",
+
+                date:
+                    "5 November 2015",
+
+                description: [
+                    "This hands-on Wireless Sensor Network workshop formed the final part of the 2nd International Smart Health and Wellbeing workshop and was presented by the e-Sense Research Lab in collaboration with the IEEE Iran Section.",
+
+                    "The practical session used Sun SPOT devices as educational wireless sensor nodes. Participants were introduced to the devices and learned how they could be used to sense different environmental conditions, execute Java programs, collect sensor measurements and process the resulting data."
+                ],
+
+                galleryCaption: "Highlights of Smart Health and Wellbeing workshop",
+                images: [
+                    { src: "images/activities/WSN-SHW-1.jpg", alt: "Smart Health and Wellbeing workshop photograph 1" },
+                    { src: "images/activities/WSN-SHW-2.jpg", alt: "Smart Health and Wellbeing workshop photograph 2" },
+                ],
+
+                links: [
+                    {
+                        label: "More Information on Smart Health and Wellbeing workshop",
+                        url: "https://facultymembers.sbu.ac.ir/ghassemian/wsn-workshops/wsn-workshop-in-shw2015"
+                    }
+                ]
+            },
+
+
+            "smart-health-2015": {
+                title:
+                    "The 2nd International Smart Health and Wellbeing",
+
+                role:
+                    "Workshop Organisational Team",
+
+                venue:
+                    "Shahid Beheshti University (SBU), Tehran (Iran)",
+
+                date:
+                    "5 November 2015",
+
+                description: [
+                    "The 2nd International Smart Health and Wellbeing workshop was a one-day multidisciplinary event held on 5 November 2015, focusing on research and technological advances in wireless, connected and mobile health.",
+
+                    "The programme brought together eight speakers and included two keynote speeches, several technical talks and a discussion session addressing advances in technologies for smart health and wellbeing. A poster session and a hands-on Wireless Sensor Network workshop were also included as part of the event."
+                ],
+
+                galleryCaption: "Highlights of Smart Health and Wellbeing workshop",
+                images: [
+                    { src: "images/activities/SHW-1.jpg", alt: "Smart Health and Wellbeing workshop photograph 1" },
+                    { src: "images/activities/SHW-2.jpg", alt: "Smart Health and Wellbeing workshop photograph 2" },
+                    { src: "images/activities/SHW-3.jpg", alt: "Smart Health and Wellbeing workshop photograph 3" }
+                ],
+
+                links: [
+                    {
+                        label: "More Information on Smart Health and Wellbeing workshop",
+                        url: "https://facultymembers.sbu.ac.ir/ghassemian/smart-health-wellbeing-wokshop/2nd-workshop-october-2015"
+                    }
+                ]
+            }
+        };
+
+
+        /* ============================================================
+           Activity explorer
+           ============================================================ */
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const activityButtons =
+                Array.from(document.querySelectorAll(".activity-list-item"));
+
+            const activityDetail =
+                document.getElementById("activityDetail");
+
+            const activityTitle =
+                document.getElementById("activityTitle");
+
+            const activityRole =
+                document.getElementById("activityRole");
+
+            const activityVenue =
+                document.getElementById("activityVenue");
+
+            const activityDate =
+                document.getElementById("activityDate");
+
+            const activityDescription =
+                document.getElementById("activityDescription");
+
+            const activityLinks =
+                document.getElementById("activityLinks");
+
+            const activityGallery =
+                document.getElementById("activityGallery");
+
+            const progressBar =
+                document.getElementById("activityProgressBar");
+
+            const modalElement =
+                document.getElementById("activityImageModal");
+
+            const rotationTime = 10000; // 10 seconds
+
+            let currentIndex = 0;
+            let rotationTimer = null;
+            let interactionPaused = false;
+
+
+            /* ----------------------------------------------------------
+               Show selected activity
+               ---------------------------------------------------------- */
+
+            function showActivity(index, restartTimer = true) {
+
+                currentIndex = index;
+
+                const button = activityButtons[currentIndex];
+                const activityId = button.dataset.activity;
+                const activity = activities[activityId];
+
+                if (!activity) {
+                    return;
+                }
+
+
+                activityButtons.forEach((item) => {
+                    item.classList.remove("active");
+                    item.setAttribute("aria-pressed", "false");
+                });
+
+                button.classList.add("active");
+                button.setAttribute("aria-pressed", "true");
+
+
+                activityTitle.textContent = activity.title;
+                activityRole.textContent = activity.role;
+                activityVenue.textContent = activity.venue;
+                activityDate.textContent = activity.date;
+
+                renderDescription(activity.description);
+                renderLinks(activity.links);
+                renderGallery(activity);
+
+
+                if (restartTimer && !interactionPaused) {
+                    startRotation();
+                }
+            }
+
+
+            /* ----------------------------------------------------------
+               Description
+               ---------------------------------------------------------- */
+
+            function renderDescription(paragraphs) {
+
+                activityDescription.innerHTML = "";
+
+                const content =
+                    Array.isArray(paragraphs)
+                        ? paragraphs
+                        : [paragraphs];
+
+                content.forEach((text) => {
+
+                    const paragraph =
+                        document.createElement("p");
+
+                    paragraph.textContent = text;
+
+                    activityDescription.appendChild(paragraph);
+                });
+            }
+
+
+            /* ----------------------------------------------------------
+               External links
+               ---------------------------------------------------------- */
+
+            function renderLinks(links) {
+
+                activityLinks.innerHTML = "";
+
+                if (!links || links.length === 0) {
+                    activityLinks.classList.add("d-none");
+                    return;
+                }
+
+                activityLinks.classList.remove("d-none");
+
+                links.forEach((link) => {
+
+                    const anchor =
+                        document.createElement("a");
+
+                    anchor.href = link.url;
+                    anchor.target = "_blank";
+                    anchor.rel = "noopener noreferrer";
+                    anchor.className = "btn btn-outline-dark btn-sm";
+                    anchor.textContent = link.label;
+
+                    activityLinks.appendChild(anchor);
+                });
+            }
+
+
+            /* ----------------------------------------------------------
+               Gallery
+      
+               If galleryCaption exists, the images share one caption
+               and are displayed together in a grid.
+      
+               If there is no shared galleryCaption but individual images
+               have captions, each caption appears beneath its own image.
+               ---------------------------------------------------------- */
+
+            function renderGallery(activity) {
+
+                const images = activity.images || [];
+                const sharedCaption = activity.galleryCaption || "";
+
+                activityGallery.innerHTML = "";
+
+                if (images.length === 0) {
+                    activityGallery.classList.add("d-none");
+                    return;
+                }
+
+                activityGallery.classList.remove("d-none");
+
+
+                const groupFigure =
+                    document.createElement("figure");
+
+                groupFigure.className =
+                    "activity-media-group";
+
+
+                const imageGrid =
+                    document.createElement("div");
+
+                imageGrid.className =
+                    "activity-media-grid";
+
+
+                images.forEach((image) => {
+
+                    const wrapper =
+                        document.createElement("div");
+
+                    wrapper.className =
+                        "activity-media-item";
+
+
+                    const button =
+                        document.createElement("button");
+
+                    button.type = "button";
+                    button.className = "activity-media-button";
+
+                    button.setAttribute(
+                        "aria-label",
+                        `Enlarge ${image.alt || "activity photograph"}`
+                    );
+
+
+                    const img =
+                        document.createElement("img");
+
+                    img.src = image.src;
+                    img.alt = image.alt || "";
+                    img.loading = "lazy";
+                    img.decoding = "async";
+
+
+                    button.appendChild(img);
+
+
+                    button.addEventListener("click", function () {
+
+                        openActivityImage(
+                            image.src,
+                            image.alt || "",
+                            image.caption || sharedCaption
+                        );
+                    });
+
+
+                    wrapper.appendChild(button);
+
+
+                    if (!sharedCaption && image.caption) {
+
+                        const individualCaption =
+                            document.createElement("div");
+
+                        individualCaption.className =
+                            "activity-media-individual-caption";
+
+                        individualCaption.textContent =
+                            image.caption;
+
+                        wrapper.appendChild(individualCaption);
+                    }
+
+
+                    imageGrid.appendChild(wrapper);
+                });
+
+
+                groupFigure.appendChild(imageGrid);
+
+
+                if (sharedCaption) {
+
+                    const caption =
+                        document.createElement("figcaption");
+
+                    caption.className =
+                        "activity-media-caption";
+
+                    caption.textContent =
+                        sharedCaption;
+
+                    groupFigure.appendChild(caption);
+                }
+
+
+                activityGallery.appendChild(groupFigure);
+            }
+
+
+            /* ----------------------------------------------------------
+               Enlarged image modal
+               ---------------------------------------------------------- */
+
+            function openActivityImage(src, alt, caption) {
+
+                const modalImage =
+                    document.getElementById("activityModalImage");
+
+                const modalCaption =
+                    document.getElementById("activityModalCaption");
+
+
+                modalImage.src = src;
+                modalImage.alt = alt;
+
+                modalCaption.textContent =
+                    caption || "";
+
+
+                if (caption) {
+                    modalCaption.classList.remove("d-none");
+                } else {
+                    modalCaption.classList.add("d-none");
+                }
+
+
+                const modal =
+                    bootstrap.Modal.getOrCreateInstance(modalElement);
+
+                modal.show();
+            }
+
+
+            /* ----------------------------------------------------------
+               Automatic 10-second rotation
+               ---------------------------------------------------------- */
+
+            function startRotation() {
+
+                stopRotation();
+                animateProgress();
+
+                rotationTimer =
+                    setInterval(function () {
+
+                        if (interactionPaused) {
+                            return;
+                        }
+
+                        const nextIndex =
+                            (currentIndex + 1) % activityButtons.length;
+
+                        showActivity(nextIndex, false);
+
+                        animateProgress();
+
+                    }, rotationTime);
+            }
+
+
+            function stopRotation() {
+
+                if (rotationTimer) {
+                    clearInterval(rotationTimer);
+                    rotationTimer = null;
+                }
+            }
+
+
+            /* ----------------------------------------------------------
+               Progress indicator
+               ---------------------------------------------------------- */
+
+            function animateProgress() {
+
+                progressBar.style.transition = "none";
+                progressBar.style.width = "0%";
+
+                void progressBar.offsetWidth;
+
+                progressBar.style.transition =
+                    `width ${rotationTime}ms linear`;
+
+                progressBar.style.width = "100%";
+            }
+
+
+            function pauseRotation() {
+
+                interactionPaused = true;
+
+                stopRotation();
+
+                progressBar.style.transition = "none";
+                progressBar.style.width = "0%";
+            }
+
+
+            function resumeRotation() {
+
+                interactionPaused = false;
+
+                startRotation();
+            }
+
+
+            /* ----------------------------------------------------------
+               Project-list-style interaction
+               ---------------------------------------------------------- */
+
+            activityButtons.forEach((button, index) => {
+
+                button.addEventListener("click", function () {
+                    showActivity(index, true);
+                });
+
+
+                button.addEventListener("focus", function () {
+                    showActivity(index, true);
+                });
+
+
+                button.addEventListener("mouseenter", function () {
+
+                    pauseRotation();
+
+                    showActivity(index, false);
+                });
+
+
+                button.addEventListener("mouseleave", function () {
+                    resumeRotation();
+                });
+
+            });
+
+
+            /*
+              Pause while the visitor is reading the right-hand panel.
+            */
+
+            activityDetail.addEventListener("mouseenter", function () {
+                pauseRotation();
+            });
+
+
+            activityDetail.addEventListener("mouseleave", function () {
+                resumeRotation();
+            });
+
+
+            /*
+              Pause while an enlarged image is open.
+            */
+
+            modalElement.addEventListener("shown.bs.modal", function () {
+                pauseRotation();
+            });
+
+
+            modalElement.addEventListener("hidden.bs.modal", function () {
+                resumeRotation();
+            });
+
+
+            /* ----------------------------------------------------------
+               Initial display
+               ---------------------------------------------------------- */
+
+            showActivity(0, false);
+            startRotation();
+
+        });
+    </script>
+
+</body>
+
+</html>

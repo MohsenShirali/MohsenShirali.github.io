@@ -1566,6 +1566,10 @@ article.post-item {
   color: var(--secondary-color) !important;
 }
 
+.text-gold {
+  color: #c59b27 !important;
+}
+
 /* primary button */
 .btn-link,
 .link-primary {
@@ -2292,6 +2296,758 @@ button.filter-button:hover {
 
   .project-media-item img {
     height: auto;
+  }
+
+}
+
+/* ============================================================
+   PROFESSIONAL ACTIVITIES PAGE
+   ============================================================ */
+
+
+/* ============================================================
+   CONFERENCE / WORKSHOP EXPLORER
+   ============================================================ */
+
+.activity-explorer {
+  position: relative;
+}
+
+
+
+/* ------------------------------------------------------------
+   LEFT ACTIVITY LIST
+   ------------------------------------------------------------ */
+
+.activity-list-wrapper {
+  position: sticky;
+  top: 100px;
+}
+
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+
+.activity-list-item {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 1rem 1.1rem;
+
+  border: 1px solid rgba(47, 47, 47, 0.12);
+  border-radius: 0.8rem;
+
+  background: #fff;
+  color: var(--dark-color);
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.activity-list-title {
+  font-family: var(--heading-font);
+
+  font-size: 1rem;
+  font-weight: 650;
+
+  line-height: 1.35;
+}
+
+
+.activity-list-subtitle {
+  margin-top: 0.3rem;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  opacity: 0.72;
+}
+
+
+.activity-list-item:hover,
+.activity-list-item:focus {
+  border-color: var(--accent-color);
+
+  color: var(--accent-color);
+
+  outline: none;
+
+  transform: translateX(4px);
+
+  box-shadow:
+    0 0.35rem 1rem rgba(0, 0, 0, 0.06);
+}
+
+
+.activity-list-item.active {
+  background: var(--accent-color);
+
+  border-color: var(--accent-color);
+
+  color: #fff;
+
+  transform: translateX(6px);
+
+  box-shadow:
+    0 0.5rem 1.3rem rgba(0, 0, 0, 0.08);
+}
+
+
+.activity-list-item.active:hover,
+.activity-list-item.active:focus {
+  color: #fff;
+}
+
+
+
+/* ============================================================
+   RIGHT ACTIVITY PANEL
+   ============================================================ */
+
+.activity-detail-card {
+  position: relative;
+
+  min-height: 560px;
+
+  background: #fff;
+
+  border:
+    1px solid rgba(47, 47, 47, 0.10);
+
+  border-radius: 1rem;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 0.7rem 2rem rgba(0, 0, 0, 0.06);
+}
+
+
+.activity-detail-content {
+  padding: 2.5rem;
+}
+
+
+.activity-detail-title {
+  margin-bottom: 0.55rem;
+}
+
+
+
+/* ------------------------------------------------------------
+   ROLE
+   ------------------------------------------------------------ */
+
+.activity-role {
+  margin-bottom: 1.4rem;
+
+  color: var(--accent-color);
+
+  font-family: var(--heading-font);
+
+  font-size: 1.15rem;
+
+  font-weight: 700;
+}
+
+
+
+/* ------------------------------------------------------------
+   VENUE / DATE
+   ------------------------------------------------------------ */
+
+.activity-meta-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+
+  padding: 1.1rem 1.2rem;
+
+  border-radius: 0.8rem;
+
+  background: rgba(47, 47, 47, 0.035);
+}
+
+
+.activity-meta-item {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.2rem;
+}
+
+
+.activity-meta-label {
+  color: var(--accent-color);
+
+  font-size: 0.78rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+
+/* ------------------------------------------------------------
+   DESCRIPTION
+   ------------------------------------------------------------ */
+
+.activity-description {
+  line-height: 1.8;
+}
+
+
+.activity-description p {
+  margin-bottom: 1.15rem;
+}
+
+
+.activity-description p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/* ------------------------------------------------------------
+   EXTERNAL LINKS
+   ------------------------------------------------------------ */
+
+.activity-links {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.7rem;
+
+  margin-top: 1.5rem;
+}
+
+
+
+/* ============================================================
+   ACTIVITY IMAGE GALLERY
+   ============================================================ */
+
+.activity-gallery {
+  width: 100%;
+
+  margin-top: 2.3rem;
+}
+
+
+.activity-media-group {
+  width: 100%;
+
+  margin: 0;
+}
+
+
+/*
+  Four CES photographs will normally become
+  a 2 x 2 grid in the right panel.
+
+  If you later use two photos, they will
+  naturally appear in one row.
+*/
+
+.activity-media-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 1rem;
+
+  align-items: stretch;
+}
+
+
+.activity-media-item {
+  min-width: 0;
+}
+
+
+.activity-media-button {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(47, 47, 47, 0.10);
+
+  border-radius: 0.8rem;
+
+  background: #f8f8f8;
+
+  cursor: zoom-in;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.activity-media-button:hover,
+.activity-media-button:focus {
+  border-color: var(--accent-color);
+
+  outline: none;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0.55rem 1.4rem rgba(0, 0, 0, 0.08);
+}
+
+
+.activity-media-button img {
+  display: block;
+
+  width: 100%;
+  height: 230px;
+
+  object-fit: cover;
+}
+
+
+.activity-media-caption {
+  margin-top: 0.9rem;
+
+  padding: 0 0.5rem;
+
+  text-align: center;
+
+  color: var(--body-text-color);
+
+  font-size: 0.95rem;
+
+  line-height: 1.5;
+}
+
+
+.activity-media-individual-caption {
+  margin-top: 0.7rem;
+
+  padding: 0 0.4rem;
+
+  text-align: center;
+
+  color: var(--body-text-color);
+
+  font-size: 0.9rem;
+
+  line-height: 1.45;
+}
+
+
+
+/* ============================================================
+   ROTATION PROGRESS
+   ============================================================ */
+
+.activity-progress {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 4px;
+
+  overflow: hidden;
+
+  background:
+    rgba(143, 109, 78, 0.12);
+}
+
+
+.activity-progress-bar {
+  width: 0;
+  height: 100%;
+
+  background: var(--accent-color);
+}
+
+
+
+/* ============================================================
+   COMMUNITY ROLE CARDS
+   ============================================================ */
+
+.community-role-card,
+.service-card {
+  position: relative;
+
+  padding: 2rem;
+
+  border:
+    1px solid rgba(47, 47, 47, 0.10);
+
+  border-radius: 1rem;
+
+  background: #fff;
+
+  box-shadow:
+    0 0.5rem 1.5rem rgba(0, 0, 0, 0.045);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.community-role-card:hover,
+.service-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 0.8rem 1.8rem rgba(0, 0, 0, 0.07);
+}
+
+
+.community-role-badge,
+.service-type {
+  display: inline-block;
+
+  margin-bottom: 1rem;
+
+  padding: 0.35rem 0.7rem;
+
+  border-radius: 2rem;
+
+  background:
+    rgba(143, 109, 78, 0.10);
+
+  color: var(--accent-color);
+
+  font-size: 0.82rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.02em;
+}
+
+
+.community-link {
+  color: var(--accent-color);
+
+  font-weight: 650;
+
+  text-decoration: none;
+}
+
+
+.community-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ============================================================
+   PEER REVIEW GRID
+   ============================================================ */
+
+.review-service-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 1rem;
+}
+
+
+.review-service-item {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.35rem;
+
+  padding: 1.4rem;
+
+  border:
+    1px solid rgba(47, 47, 47, 0.09);
+
+  border-radius: 0.85rem;
+
+  background: #fff;
+}
+
+
+.review-service-type {
+  color: var(--accent-color);
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.05em;
+
+  text-transform: uppercase;
+}
+
+
+
+/* ============================================================
+   ACTIVITY IMAGE MODAL
+   ============================================================ */
+
+.activity-image-modal-content {
+  overflow: hidden;
+
+  border: 0;
+
+  border-radius: 1rem;
+
+  background: #fff;
+}
+
+
+.activity-modal-image {
+  display: block;
+
+  width: auto;
+
+  max-width: 100%;
+
+  height: auto;
+
+  max-height: 78vh;
+
+  margin: 0 auto;
+
+  object-fit: contain;
+}
+
+
+.activity-modal-caption {
+  max-width: 900px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  padding: 0 1rem 1rem;
+
+  font-size: 1rem;
+
+  line-height: 1.55;
+}
+
+
+
+/* ============================================================
+   RESPONSIVE — TABLET
+   ============================================================ */
+
+@media screen and (max-width: 991px) {
+
+  .activity-list-wrapper {
+    position: static;
+  }
+
+
+  .activity-detail-card {
+    min-height: auto;
+  }
+
+
+  .activity-detail-content {
+    padding: 2rem;
+  }
+
+
+  .review-service-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+
+/* ============================================================
+   RESPONSIVE — MOBILE
+   ============================================================ */
+
+@media screen and (max-width: 576px) {
+
+  .activity-detail-content {
+    padding: 1.4rem;
+  }
+
+
+  .activity-meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .activity-media-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .activity-media-button img {
+    height: auto;
+
+    max-height: 420px;
+
+    object-fit: contain;
+  }
+
+
+  .review-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .community-role-card,
+  .service-card {
+    padding: 1.5rem;
+  }
+
+}
+
+/* ============================================================
+   SEARCH-FRIENDLY CONTENT INDEX
+   ============================================================ */
+
+.content-index-wrapper {
+  padding: 2rem;
+
+  background: #fff;
+
+  border: 1px solid rgba(47, 47, 47, 0.10);
+
+  border-radius: 1rem;
+
+  box-shadow:
+    0 0.5rem 1.5rem rgba(0, 0, 0, 0.04);
+}
+
+
+.content-index-accordion {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.75rem;
+}
+
+
+.content-index-item {
+  overflow: hidden;
+
+  border:
+    1px solid rgba(47, 47, 47, 0.10);
+
+  border-radius: 0.75rem;
+
+  background: #fff;
+}
+
+
+.content-index-title {
+  position: relative;
+
+  padding: 1rem 3rem 1rem 1.2rem;
+
+  color: var(--dark-color);
+
+  font-family: var(--heading-font);
+
+  font-size: 1rem;
+
+  font-weight: 650;
+
+  line-height: 1.4;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+
+.content-index-title:hover {
+  color: var(--accent-color);
+
+  background:
+    rgba(143, 109, 78, 0.04);
+}
+
+
+.content-index-item[open] .content-index-title {
+  color: var(--accent-color);
+
+  border-bottom:
+    1px solid rgba(47, 47, 47, 0.08);
+}
+
+
+.content-index-body {
+  padding: 1.2rem;
+
+  line-height: 1.75;
+}
+
+
+.content-index-body p {
+  margin-bottom: 1rem;
+}
+
+
+.content-index-body p:last-child {
+  margin-bottom: 0;
+}
+
+
+.content-index-meta {
+  color: var(--accent-color);
+
+  font-weight: 650;
+}
+
+
+@media screen and (max-width: 576px) {
+
+  .content-index-wrapper {
+    padding: 1.25rem;
   }
 
 }
